@@ -1,6 +1,8 @@
 +++
 title = "Blogging: the new old habit"
 #date = 2022-01-06
+[taxonomies]
+#tags = ["twitter", "adhd", "personal"]
 +++
 It's time for a new habit.
 
