@@ -28,47 +28,65 @@ I love a good workflow.
 
 Blogging and journaling, while never a primary activity for me, I think they both greatly improve my process; How I plan. When I can't blog, I don't feel like I'm doing my best. Though blogging didn't start as development problem, it became one. As a somewhat older developer—set in my ways—my journey choosing static webpage generators greatly influenced my take on modern development. Here's my story.
 
-## Jekyll (Ruby, Gem)
+## The Jekyll era (Ruby, Gem)
 
-I ran a WordPress blog for over a decade (and a social network, `*cough*` Ludum Dare), and by the end I was tired of WordPress. Blogs are static. They sometimes change, but never minute to minute, second to second. Why am I generating my blog on every request? This seemed incredibly inefficient.
+I ran a WordPress blog for over a decade (and a social network, `*cough*` Ludum Dare), and by the end I was tired of WordPress... maybe hostile of WordPress. Blogs are static. They sometimes change, but never minute to minute, second to second. Why am I generating my blog on every request? This seemed incredibly wasteful.
 
-My other problem was I was styling by blogs with HTML. I don't hate HTML, but as a native document format it's clumsy. I'd been using GitHub for years, and though it I became a fan of markdown. It was rare that I needed the flexibility raw HTML provided me.
+My other problem was I was styling my blogs with HTML. I don't hate HTML, but as a native document format it's clumsy. I'd been using GitHub for years, and through it I became a fan of markdown. It's rare that I need the flexibility that raw HTML provides me.
 
-So I decided to migrate my WordPress blog to Jekyll.
+In early 2018 I migrated my WordPress blog to Jekyll.
 
-The migration wasn't perfect. All of my images and custom styles were now wrong, but the words were there.
+The migration wasn't perfect. All of my images and custom styles were now wrong, but my words were there. It was a blog again.
 
-For a while I was content with Jekyll, but the workflow was clumsy and forgettable. That bit me. I took a break from blogging, but came back with no idea how to update my blog. There was a minor but extremely important step I could no longer remember. I couldn't test locally. The only way I could update would be to push changes and hope for the best.
+For a while I was content with Jekyll, but the workflow was clumsy and forgettable. That bit me. I took a break from blogging, but came back with no idea how to update my blog. There was a minor but extremely important setup step I could no longer remember, and I never found it mentioned in documentation or my own notes. I could no longer write and test locally. The only way I could blog would be to write, push changes, and hope GitHub pages wouldn't choke.
 
-I think this was when I first figured out what I hated about modern programming languages.
+This is when I started becoming aware of what I hated about modern programming languages.
 
-Modern programming languages have environments, and those environments often include package managers. When you want a JavaScript application, you install NodeJS; When you want a Python application, you get PIP; Ruby is no different, you need Gem.
+Modern programming languages have environments, and these environments require package managers. When you want a JavaScript application, you need NodeJS and NPM. When you want a Python application, to a lesser degree you need PIP. Ruby is no different: You're not getting anywhere without Gem.
 
-The problem is every language and package manager is unique. They're similar, but never the same. The developers of Jekyll may say it's _"easy"_, but every package manager powered language comes with baggage: you need to learn it and its package manager.
+Package managers are chains of trust. When you require a package, you're not only depending on a package, you're trusting that package. Packages often depend on other packages, so to trust one package is to implicitly trust several other packages. Yes, I have trust issues, but those issues are well founded. They come from a lifetime of programming, more than half as a professional.
 
-In my experience, working with Jekyll/Ruby/GitHub pages was incredibly unreliable. GitHub pages in fine, but I'd make a change to Jekyll files, push it, and it silently error. I don't doubt some people have had a positive experience with this workflow, but I came to hate updating my Jekyll blog. I have zero interest in Ruby as a language, and I was going to have to learn it and Gem to make my blog work right.
+Trust is something I'm going to have to work on, but to my knowledge _trust_ was never a core tenant of Ruby.
 
-No thanks.
+The other problem is that every package manager is unique. They're similar, but never the same. The developers of Jekyll may say it's _"easy"_, but package manager powered project comes with baggage: you need to learn the package manager, sometimes the language too.
 
+In my experience, working with Jekyll/Ruby/GitHub pages was incredibly unreliable. GitHub pages in fine, but I'd make a change to Jekyll files, push it, and it would silently error. I don't doubt some people have had a positive experience with this workflow, but I came to hate updating my Jekyll blog.
 
-## Hugo (Go)
+As a blogger I was stagnant.
 
-Due to my fight with Jekyll, I wasn't blogging anymore. Since many static webpage generators support markdown, I figured I could migrate to an alternative without much trouble, so I began the search.
+## The Hugo era (Go)
 
-A popular option was Hugo, so I dug into it. Coming from WordPress, I missed being able to edit my blogs from the browser. Early on I found a Hugo plugin called _Hugo Web Admin_ that gives you something like a web interface for blogging. Cool! Lets try Hugo.
+I wasn't blogging anymore. My fight with Jekyll took all the joy out of it.
 
-Hugo worked a lot better for me, but _Hugo Web Admin_ wasn't the best tool. Also by design (or my ignorance) Hugo required me to specify a few too many details, including what style to use. If I didn't specify the style, it wouldn't look like my blog.
+New plan.
 
-This feeds back into my general criticism of Jekyll: to learn how to use this better, I was going to have to learn Go and Go's package manager. I did briefly dabble with Go as a programming language, but it didn't feel different enough. I frequently criticize C# for being a crippled C++ with a better core library. Go as a language seemed _fine_, but nearly being a C++11 expert, it wasn't radically different enough. I wasn't going to gain much teaching myself Go.
+Many static webpage generators support markdown. In theory, if I could find an alternative I liked, migrating shouldn't be _that_ much trouble.
 
-Like before, my blogging became stagnant from not understanding the tooling.
+I began searching for a Jekyll alternative.
 
+The alternative I settled on was Hugo. Coming from WordPress, I missed editing my blogs from the browser. Early on I found a Hugo plugin called _Hugo Web Admin_ that gives you something like a web interface for blogging. It was at this time I figured out the "double GitHub repository" trick, where one repo is the sources and a 2nd (a submodule) is the actual GitHub pages webpage. I would write my posts, locally run a Hugo build, and push the submodule.
 
-## Zola (Rust, Cargo)
+This setup worked a lot better for me, but _Hugo Web Admin_ wasn't the best tool. Also by design (or my ignorance) Hugo required me to specify a few too many details, including what style to use. If I didn't specify the style, it wouldn't look like my blog.
 
-Fast forward to mid-2021. Holy shit! My business is thriving! Contracts are signed, and I had to pull some websites out-of-my-butt.
+Jekyll and Hugo are established monolithic projects. The last thing I wanted to do was take the time to _master_ either of them. I incorrectly assumed I could approach blogging with a static website generator _half assed_, like WordPress. WordPress is a bigger, far more complicated project than Jekyll and Hugo combined. WordPress is a complete product, designed to hide everything from the user. Other than JPEG's, the average WordPress user never has to think about files.
 
-I'd just finished a proof-of-concept for the [Jammer.tv](https://new.jammer.tv/) built on CloudFlare pages and workers, so I knew pages was an option here. However, my experience with Jekyll and Hugo left me ambivalent. I knew I wanted a static webpage generator, but the ones I'd used in the past left something to be desired.
+Static website generators require strong filing skills.
+
+At a fundamental level, you need to know how to manage files. You should also understand how files and serving files works. You need to go in fully aware that your markdown files are being transformed into one or more HTML files, and that your input file structure may look nothing like your output file structure.
+
+Is that hard? No not really, but it's not _WordPress easy_.
+
+My big mistake diving into static webpage generators was assuming that I wouldn't have to learn them. On the contrary, choosing a static webpage generator is as much of a commitment as anything. It's a powerful tool you can wield, and if you don't respect it, it'll cut you. For safety scissors, stick to a WordPress-like.
+
+I wasn't committed to learning Hugo and Go, and in time I hit the same "how do I update" problem. Also the "double GitHub repository" trick is clumsy, because GIT submodules are clumsy. With Jekyll I could write, push, cross my fingers and hope it worked; But without a working local Hugo setup, I couldn't update at all.
+
+Again, as a blogger I was stagnant.
+
+## Today, the Zola era (Rust, Cargo)
+
+Fast forward to mid-2021. Holy shit! My business is thriving! Contracts are signed, and I websites to remove from my buttocks.
+
+I recently finished a proof-of-concept for the [Jammer.tv](https://new.jammer.tv/) built on CloudFlare pages and workers, so I knew pages was an option here. However, my experience with Jekyll and Hugo left me ambivalent. I knew I wanted a static webpage generator, but the ones I'd used in the past left something to be desired.
 
 So I fired up CloudFlare pages and browsed. What else do you support? Maybe one of them will catch my eye.
 
