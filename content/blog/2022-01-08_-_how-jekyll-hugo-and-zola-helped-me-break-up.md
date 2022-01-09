@@ -14,16 +14,16 @@ When 2021 began, I was a C++ programmer.
 
 For 20 years I was a C++ programmer. No matter what I was making, no matter the language, I was a C++ programmer. Whether I was writing GameBoy assembly code, or backend PHP website code, I would eventually return to the _best_ language of all: C++.
 
-Okay, maybe not _"best"_, but in my mind "C++ with a C style" was the least-worst of the languages. I was never good at articulating _why_ I disliked other languages, but I think I can do a better here.
+Okay, maybe not _"best"_, but in my mind "C++ with a C style" (or imperative C++) was the least-worst of the languages. I was never good at articulating _why_ I disliked other languages, but something bothered me about the shift to package managers.
 
 When 2021 ended, I wasn't a C++ programmer.
 
-Here's my story how searching for a better way to blog broke me.
+Here's my story how searching for a better way to blog broke my identity.
 
 
 ## Preamble: Static hosting, it's all in the deployment
 
-GitHub has a product called "GitHub Pages" that publishes files from a repository as a static webpage. Obviously GitHub didn't invent static webpages, but I'd say GitHub's ubiquity lead to what happened. 
+GitHub has a product called [GitHub Pages](https://pages.github.com/) that publishes files from a repository as a static webpage. Obviously GitHub didn't invent static webpages, but I'd say GitHub's ubiquity lead to what happened. 
 
 Static webpage hosting works as you'd expect it: upload some files and it shows up as-is. Static webpages are fast, efficient, and predictable.
 
@@ -31,9 +31,9 @@ How is it different from FTP'ing to an Apache server, like we did 20 years ago?
 
 Generally speaking it's not that different, but workflows today are more refined. Files are stored in source control (GIT), with a full history of changes, commentary, and ticketing available (GitHub). While you can't run server-side scripts, you can customize the deployment process. Standardized tools can take a bunch of files and turn them into a website with consistent styles and structure. Test locally, push a change, and it's live a few minutes later.
 
-Out of the box, GitHub Pages support the Jekyll static webpage generator. Jekyll is a Ruby tool that converts markdown files into HTML files. This is just one of many tools that do this, but if you use GitHub, it might be your first.
+Out of the box, GitHub Pages support the [Jekyll](https://jekyllrb.com/) static webpage generator. Jekyll is a Ruby tool that converts markdown files into HTML files. This is just one of many tools that do this, but if you use GitHub, it might be your first.
 
-You can deploy to GitHub with tools other than Jekyll using "GitHub environments". They're a bit complicated to setup, so I leave that as an exercise to the reader. Alternatively you can create a 2nd repository, or a GIT submodule to store the output from your static webpage generator of choice.
+You can deploy to GitHub with tools other than Jekyll using "GitHub environments". They're a bit complicated to setup, so I leave that as an exercise to the reader. Alternatively you can create a 2nd repository, or a GIT submodule to store the output from your static webpage generator of choice—I call this the "double GitHub repository" trick.
 
 There's a problem though: You should only use GitHub Pages for non-commercial work.
 
@@ -50,7 +50,7 @@ But let's talk about the not-so-good workflows experienced on my journey.
 
 ## The Jekyll era (Ruby, Gem)
 
-I ran a WordPress blog for over a decade (and a social network, `*cough*` Ludum Dare). By the end I was tired of, maybe hostile of WordPress.
+I ran a [WordPress](https://wordpress.com/) blog for over a decade (and a social network, `*cough*` Ludum Dare). By the end I was tired of, maybe hostile of WordPress.
 
 Blogs are static.
 
@@ -60,7 +60,9 @@ My other problem was I was styling my blogs with HTML. I don't hate HTML, but as
 
 In early 2018 I migrated my WordPress blog to Jekyll.
 
-The migration wasn't perfect. All of my images and custom styles were now wrong, but my words were there. It was a blog again.
+The migration wasn't perfect. All of my image links and custom styles were now wrong, but my words were there. It was a blog again.
+
+Coming from WordPress, I missed editing my blogs from the browser. Early on I found a plugin called [Jekyll Admin](https://jekyll.github.io/jekyll-admin/) that gives you a web interface for blogging.
 
 For a while I was content with Jekyll, but the workflow was clumsy and forgettable. That bit me. I took a break from blogging, but came back with no idea how to update my blog. There was a minor but extremely important setup step I could no longer remember, and I never found it mentioned in documentation or my own notes. I could no longer write and test locally. The only way I could blog would be to write, push changes, and hope GitHub Pages wouldn't choke.
 
@@ -70,17 +72,19 @@ Modern programming languages have environments, and these environments require p
 
 Package managers are chains of trust. When you require a package, you're not only depending on a package, you're trusting that package. Packages often depend on other packages, so to trust one package is to implicitly trust several other packages. Yes, I have trust issues, but those issues are well founded. They come from a lifetime of programming, more than half as a professional.
 
-Trust is something I'm going to have to work on, but to my knowledge _trust_ was never a core tenant of Ruby.
+Trust is something I'm going to have to work on, but to my knowledge _trust_ was never a core tenant of Ruby. Frankly I didn't know trust was my concern until recently.
 
-The other problem is that every package manager is unique. They're similar, but never the same. The developers of Jekyll may say it's _"easy"_, but package manager powered project comes with baggage: you need to learn the package manager, sometimes the language, to make the most of it.
+The other problem is that every package manager is unique. They're similar, but never the same. The developers of Jekyll may say it's _"easy"_, but every package manager powered project comes with baggage: you need to learn the package manager (sometimes the language) to make the most of it.
 
-In my experience, working with Jekyll/Ruby/GitHub pages was incredibly unreliable. GitHub Pages in fine, but I'd make a change to Jekyll files, push it, and it would silently error. I don't doubt some people have had a positive experience with this workflow, but I came to hate updating my Jekyll blog thanks to it.
+In my experience, working with Jekyll/Ruby/GitHub pages was incredibly unreliable. GitHub Pages in fine, but I'd make a change to Jekyll files, push it, and it would silently error. That said, years later I believe GitHub eventually exposed the errors in GitHub environments (or it just took me that long to find it). I don't doubt some people have had a positive experience with this workflow, but I came to hate updating my Jekyll blog thanks to it.
 
-My blog was stagnant.
+As things stood, I wasn't going to figure this out, unless I was willing to study Jekyll, Ruby, and Gem. I was not.
+
+My blog grew stagnant. Last post, May 2020.
 
 ## The Hugo era (Go)
 
-I wasn't blogging anymore. My fight with Jekyll took all the joy out of it.
+I wasn't blogging anymore. My fight with Jekyll took the joy out of it. I had the itch though, and I need to write again.
 
 New plan.
 
@@ -88,23 +92,22 @@ Many static webpage generators support markdown. In theory, if I could find an a
 
 I began searching for a Jekyll alternative.
 
-The alternative I settled on was Hugo. Coming from WordPress, I missed editing my blogs from the browser. Early on I found a Hugo plugin called _Hugo Web Admin_ that gives you a web interface for blogging. It was at this time I figured out the "double GitHub repository" trick, where one repo is the sources and a 2nd (a submodule) is the actual GitHub Pages webpage. I would write my posts, locally run a Hugo build, and push both my sources and the submodule.
+The alternative I settled on was [Hugo](https://gohugo.io/). Also at this time I figured out the "double GitHub repository" trick, where one repo stores the sources and a 2nd (a submodule) stores the built page.
 
-This setup worked a lot better for me, but _Hugo Web Admin_ wasn't the best tool. Also by design (or my ignorance) Hugo required me to specify a few too many details, including what style to use. If I didn't specify the style, it wouldn't look like my blog.
+As hoped, migration wasn't too bad. The style and structure was better. I was able to create sections for blog posts AND recipes. I could write my posts, locally run a Hugo build, and push both my sources and the submodule. This new setup, in the moment, it was good.
 
-Jekyll and Hugo are established monolithic projects. The last thing I wanted to do was take the time to _master_ either of them. I incorrectly assumed I could approach blogging with a static website generator _half assed_, like WordPress. WordPress is a bigger, far more complicated project than Jekyll and Hugo combined. WordPress is a complete product, designed to hide everything from the user. Other than JPEG's, the average WordPress user never has to think about files.
+But once I was finished, I didn't use it.
 
-Static website generators require strong filing skills.
+My mistake switching to static webpage generators was assuming that I wouldn't have to learn them. I incorrectly assumed I could continue to approach blogging _"half assed"_, as I did with WordPress. On the contrary, choosing a static webpage generator is a commitment. It's a powerful tool you can wield, and if you don't respect it, you wont get much out of it.
 
-At a fundamental level, you need to know how to manage files. You should also understand how files and serving files works. You need to go in fully aware that your markdown files are being transformed into one or more HTML files, and that your input file structure may look nothing like your output file structure.
+Like before, I wasn't committed to learning Hugo and Go, and in time I hit the same "how do I update" problem. Also the "double GitHub repository" trick is clumsy, because GIT submodules are clumsy. With Jekyll I could write, push, cross my fingers and hope it worked. But without a working local Hugo setup, I couldn't update at all.
 
-Is that hard? No not really, but it's not _WordPress easy_.
+To be fair, it was early pandemic, and a lot of us weren't motivated then. I can't really fault Hugo for anything it did wrong here, but Hugo and Go didn't inspire me. Having to go back, re-learn and re-setup the tooling, I wasn't inspired enough to do it. And as time passed, I grew to dread it.
 
-My big mistake diving into static webpage generators was assuming that I wouldn't have to learn them. On the contrary, choosing a static webpage generator is as much of a commitment as anything. It's a powerful tool you can wield, and if you don't respect it, it'll cut you. For safety scissors, stick to a WordPress-like.
+I needed inspiration.
 
-I wasn't committed to learning Hugo and Go, and in time I hit the same "how do I update" problem. Also the "double GitHub repository" trick is clumsy, because GIT submodules are clumsy. With Jekyll I could write, push, cross my fingers and hope it worked; But without a working local Hugo setup, I couldn't update at all.
+My blog continued to be stagnant.
 
-Again, my blog was stagnant.
 
 ## The Zola era (Rust, Cargo)
 
@@ -116,21 +119,21 @@ My business is thriving (by the way I started a business)! Contracts are signed,
 
 A shame none of this is "blogged" anywhere, but after a year I was still in limbo. My records of this time are a few disjointed journals, video scripts, forum posts, and drafts that later became posts on [ldjam.com](https://ldjam.com). I'd either been unmotivated or too busy to solve my blogging problem, but as the ink dried I needed a static website generator.
 
-Weeks earlier I finished a proof-of-concept for [Jammer.tv](https://new.jammer.tv/) built with CloudFlare Pages and workers. If nothing else I knew CloudFlare Pages could host it. However my experience with Jekyll and Hugo left me ambivalent. I needed a static webpage generator, but which one?
+Weeks earlier I finished a proof-of-concept for [Jammer.tv](https://new.jammer.tv/) built with CloudFlare Pages and workers. If nothing else I knew CloudFlare Pages could host a static website. However my experience with Jekyll and Hugo left me ambivalent. I needed a static webpage generator, but which one?
 
-I fired up the CloudFlare Pages documentation and browsed. What _other_ tools do you support? Maybe one of them will catch my eye.
+I fired up the [CloudFlare Pages](https://developers.cloudflare.com/pages/) documentation and browsed. What _other_ tools do you support? Maybe one of them will catch my eye.
 
-On the bottom of the list was Zola, a lightweight, static webpage generate written in Rust. I liked what I saw in Zola. Fast generator performance, and a _short_ feature list. Less features meant it could be mastered in less time.
+On the bottom of the list was [Zola](https://www.getzola.org/), a lightweight, single binary, static webpage generate written in Rust. I liked what I saw in Zola. Fast generator performance, no externals to worry about, and a _short_ feature list. Less features meant it could be mastered in less time.
 
-Bottom of the list though. That shouldn't inspire much confidence, but it _was_ mature enough for CloudFlare to support and document it.
+Also Rust.
 
 I don't have a better plan, so okay, let's try Zola.
 
-I'd actually been dabbling with Rust for a while, having made my way through [The Rust Book](https://doc.rust-lang.org/stable/book/) some months earlier. I was still very suspicious of package managers, though I couldn't yet articulate why (trust). Given my choices, Rust seemed the most likely language I'd eventually use.
+I'd actually been dabbling with Rust for a while, having made my way through [The Rust Book](https://doc.rust-lang.org/stable/book/) some months earlier. I was still very suspicious of package managers, though I couldn't yet articulate why (trust). Given my choices, Rust seemed the most likely language I'd use. Maybe this would be inspiration I needed to get out of this software choice rut.
 
-Over a long day I pulled together the [Interactive Snacks](https://interactivesnacks.com) website. I started with one of the templates, and hacked it into something that met my needs. This was a simple website with pages, no blog. It was a hack-job and little gross, but it worked for me.
+Over a long day I pulled together the [Interactive Snacks](https://interactivesnacks.com) website. I started with one of the templates, and hacked it into something that met my needs. This was a simple website with pages, no blog. It was a hack-job and little gross, but it worked.
 
-I went deeper.
+I dug deeper.
 
 After combing over the docs for a few days, I had a pretty good idea of everything Zola could do. Again it's not the most featured static webpage generator, but if I stay in my lane, I knew exactly what it could do and how to do it. I tackled the first draft of [Ludum Dare's professional website](https://ludumdare.com). This website wasn't a blog, but it could be built with multiple blog-like feeds (folders).
 
@@ -139,35 +142,47 @@ After combing over the docs for a few days, I had a pretty good idea of everythi
 * A sponsors feed
 * A games feed (currently disabled)
 
-Having taken the time to ship a Zola project first (Interactive Snacks website), to then learn Zola in depth, before making and executing my plan really helped it succeed. I am confident Zola will be _enough_ to handle both websites, more websites (this blog and the Academy), and I'm confident I can teach it to others.
+Having taken the time to ship a Zola project first (Interactive Snacks website), learned Zola in depth, before coming up with a plan really helped. I'm not going to say I execute it flawlessly, but I have confidence now. I am confident Zola will be _enough_ to handle the needs of both websites, more websites (this blog and the Academy), and I'm confident I can teach it to others.
 
-The workflow is straightforward and memorable... if you know Cargo.
+The workflow is simle and straightforward, and setting up the environment is easy... if you know Rust and Cargo.
 
-I could continue singing the praises of Zola, but I have to admit I didn't give Jekyll and Hugo an equal shake. I'm not interested in investing my time in Ruby or Go. If Ruby or Go fill other needs for you, then Jekyll and Hugo might fill your need for a static website generator. 
+I could sing the praises of Zola here, but first I need to admit I didn't give Jekyll and Hugo an equal shake. They're bigger softwares, I'm wasn't interested in investing my time learning everything about them, or their environments. If Ruby or Go fill other needs for you, then definitely give Jekyll or Hugo a try. 
 
 My takeaway is you should choose a static website generator that lives in the same head-space as you.
 
-With that out of the way, Zola really was the best option (for me). 
+With that out of the way, by shear luck, Zola was my best option.
 
-Circling back to trust and package managers, Rust is pedantic. As far as general programming languages go, Rust is so much more aggressive about being syntactically correct than any language I've used. You can still mess up an algorithm, but you shouldn't mess up a bounds check. A case could be made for Haskell, but I wouldn't write an OS in Haskell (not to mention some of the templating stuff gives me "ugly PHP namespaces" vibes).
+Circling back to package managers, Rust is pedantic. As far as general programming languages go, Rust is so much more aggressive about being syntactically correct than any language I've used. You can still mess up an algorithm, but you shouldn't mess up a bounds check.
 
-Do I trust Cargo packages implicitly? No of course not, but I must admit the Rust compiler holds code quality to a higher standard than I do (sometimes). It took time and using, but I trust it enough to use it.
+Do I trust Cargo packages implicitly? No of course not, but I must admit the Rust compiler holds code quality to a high standard, higher than I do sometimes. I might never be comfortable with package managers, but after much deliberation, I am willing to trust it enough to use it.
+
+The final nail was a misunderstanding that changed everything. Initially I ran into problems installing Zola. There's a Snap package, which I used to install it on my Linux (Ubuntu) work machines, and crank out the projects above. But at the time you couldn't install Snaps on the _Windows Subsystem for Linux_ (WSL), so I really was limited to just my Linux machines. This worried me, but I didn't have the luxury to find anything else. I chose Zola, and I had to commit to it, even if I couldn't figure out how to instal it.
+
+As I grew more familiar with Rust and Cargo, I did successfully built it from sources. That alleviated my Snap concerns.
+
+But then I had my Rust facepalm moment.
+
+Did you know that by default, Rust programs are built statically? In other words, you get a large binary without any _Rust specific_ or _Linux distro specific_ dependencies? 
+
+**WHAT!?**
+
+I've fought **SO MUCH** much over the years with Linux, ABI's, and compatibility craziness that it was _inconceivable_ that all I had to do was visit [the releases page](https://github.com/getzola/zola/releases) and download the Linux binary. Do you run Linux? Pop!_OS, Ubuntu on WSL, or an obsolete Linux version? No problem, just download the binary, it'll work as-is.
+
+This is where Rust and Zola broke me.
 
 
 ## Who are you?
 
-My identity as a "C++ programmer" is definitely broken, and I just spent several paragraphs singing the praises of Rust.
+I was already warming up Rust, but then I discovered the "default static" decision. I don't know why they did this, other than it being a great solution to a constant criticism of Linux: fragmentation. Intentional or not, I read it as "hey, we've suffered though that ABI bullshit too, lets not do that". I was elated. Has something programming ever left me elated?
+
+And with that, the _greatest programming language in the world_ C++ was finally dethroned.
 
 Am I a Rust programmer?
 
-No, not yet, but I would say I'm a Rust enthusiast.
+No, not yet. I still have much to learn. I would say I'm a Rust enthusiast though.
 
-My identity of the last two decades was tied to what I saw as _the best_ programming language, but I struggled to find anything better. Other than JavaScript, every other language I touched let me down. And since my Rust "epiphany", I don't look forward to touching C++ anymore.
+For over 20 years I was a "Game Developer" and a "C++ Programmer". When I left my last job, I was beginning to accept that Game Development might not be my focus anymore. Since my Rust epiphany, in my mind I'm at best a Programmer. But is that all?
 
-At best I would identify as a programmer, but I can't decide if that's me anymore. If you asked what my job was, sure, I'd say programmer. But who am I? What is your modus operandi?
-
-Mike, the 41 year old kid who got a senior game programming job at 19. Mike who is running his second company, who spends most his time _not_ making games yet identifying as a game developer. Who are you?
-
-Identity is complicated.
+What even am I now?
 
 Lets talk about that next time.
