@@ -110,44 +110,64 @@ Again, my blog was stagnant.
 
 Fast forward to the summer of 2021... **HOLY SHIT!**
 
-My business is thriving! Contracts are signed, and I have webpages to make! 
+My business is thriving (by the way I started a business)! Contracts are signed, time is short, and I have webpages to make! 
 
 **AHHHHH!**
 
-A shame none of this is "blogged" anywhere.
+A shame none of this is "blogged" anywhere, but after a year I was still in limbo. My records of this time are a few disjointed journals, video scripts, forum posts, and drafts that later became posts on [ldjam.com](https://ldjam.com). I'd either been unmotivated or too busy to solve my blogging problem, but as the ink dried I needed a static website generator.
 
+Weeks earlier I finished a proof-of-concept for [Jammer.tv](https://new.jammer.tv/) built with CloudFlare Pages and workers. If nothing else I knew CloudFlare Pages could host it. However my experience with Jekyll and Hugo left me ambivalent. I needed a static webpage generator, but which one?
 
+I fired up the CloudFlare Pages documentation and browsed. What _other_ tools do you support? Maybe one of them will catch my eye.
 
-### ----
+On the bottom of the list was Zola, a lightweight, static webpage generate written in Rust. I liked what I saw in Zola. Fast generator performance, and a _short_ feature list. Less features meant it could be mastered in less time.
 
+Bottom of the list though. That shouldn't inspire much confidence, but it _was_ mature enough for CloudFlare to support and document it.
 
-I recently finished a proof-of-concept for the [Jammer.tv](https://new.jammer.tv/) built on CloudFlare Pages and workers, so I knew pages was an option here. However, my experience with Jekyll and Hugo left me ambivalent. I knew I wanted a static webpage generator, but the ones I'd used in the past left something to be desired.
+I don't have a better plan, so okay, let's try Zola.
 
-So I fired up CloudFlare Pages and browsed. What else do you support? Maybe one of them will catch my eye.
+I'd actually been dabbling with Rust for a while, having made my way through [The Rust Book](https://doc.rust-lang.org/stable/book/) some months earlier. I was still very suspicious of package managers, though I couldn't yet articulate why (trust). Given my choices, Rust seemed the most likely language I'd eventually use.
 
-At the bottom of the list was Zola, a lightweight static webpage generate written in Rust.
+Over a long day I pulled together the [Interactive Snacks](https://interactivesnacks.com) website. I started with one of the templates, and hacked it into something that met my needs. This was a simple website with pages, no blog. It was a hack-job and little gross, but it worked for me.
 
-I'd been dabbling in Rust, having made my way through [The Rust Book](https://doc.rust-lang.org/stable/book/) some months earlier, but I was still very suspect of package managers. Still, I liked what I saw in Zola. Fast generator performance, and a short feature list. Less features might sound like a downside, but it meant I could "master" it in less time.
+I went deeper.
 
-So okay, let's try Zola.
-
-In a couple days I pulled together the [Interactive Snacks](https://interactivesnacks.com) website. I started with one of the templates, and hacked it into something that met my needs. This was a simple website with pages, no blog. Cool, that worked out. It was clumsy and a little gross, but it did the job.
-
-I dove deeper.
-
-After combing over the docs for a few days, I had a pretty good idea of everything Zola could do. Again it's not the most featured static webpage generator, but if I stay in my lane, I knew exactly what it could do and how to do it. I tackled the first draft of [Ludum Dare's professional website](https://ludumdare.com). This website wasn't a blog, but I decided it could be built with multiple blog-like feeds.
+After combing over the docs for a few days, I had a pretty good idea of everything Zola could do. Again it's not the most featured static webpage generator, but if I stay in my lane, I knew exactly what it could do and how to do it. I tackled the first draft of [Ludum Dare's professional website](https://ludumdare.com). This website wasn't a blog, but it could be built with multiple blog-like feeds (folders).
 
 * A news/press releases feed
 * A schedule feed
 * A sponsors feed
-* And a games feed (currently disabled)
+* A games feed (currently disabled)
 
-This was my first serious use of Zola, and because I was able to take the time to learn it, it worked out great. The website as it stands today needs some work, but I'm confident that the tooling will handle years of growth, and that I'll be able to teach others how to update it.
+Having taken the time to ship a Zola project first (Interactive Snacks website), to then learn Zola in depth, before making and executing my plan really helped it succeed. I am confident Zola will be _enough_ to handle both websites, more websites (this blog and the Academy), and I'm confident I can teach it to others.
 
-That does bring up the same concerns from before: to make the most of Zola, I would need to learn Rust and the Cargo the package manager. That also meant learning to trust a package manager. I didn't immediately trust it, but as I continued to explore Rust as a language, I warmed up to it.
+The workflow is straightforward and memorable... if you know Cargo.
 
-I use Zola now. This blog is my latest Zola project, and expect it wont be my last. 
+I could continue singing the praises of Zola, but I have to admit I didn't give Jekyll and Hugo an equal shake. I'm not interested in investing my time in Ruby or Go. If Ruby or Go fill other needs for you, then Jekyll and Hugo might fill your need for a static website generator. 
 
-My Zola journey is a journey in Rust as well. This wasn't going to work if I didn't commit to it and the package manager. In time, Rust helped me trust a package manager, which was hard given the dependency hells I grew up with (C, C++, Win32, etc). 
+My takeaway is you should choose a static website generator that lives in the same head-space as you.
 
-I'm excited to do more with both Zola and Rust.
+With that out of the way, Zola really was the best option (for me). 
+
+Circling back to trust and package managers, Rust is pedantic. As far as general programming languages go, Rust is so much more aggressive about being syntactically correct than any language I've used. You can still mess up an algorithm, but you shouldn't mess up a bounds check. A case could be made for Haskell, but I wouldn't write an OS in Haskell (not to mention some of the templating stuff gives me "ugly PHP namespaces" vibes).
+
+Do I trust Cargo packages implicitly? No of course not, but I must admit the Rust compiler holds code quality to a higher standard than I do (sometimes). It took time and using, but I trust it enough to use it.
+
+
+## Who are you?
+
+My identity as a "C++ programmer" is definitely broken, and I just spent several paragraphs singing the praises of Rust.
+
+Am I a Rust programmer?
+
+No, not yet, but I would say I'm a Rust enthusiast.
+
+My identity of the last two decades was tied to what I saw as _the best_ programming language, but I struggled to find anything better. Other than JavaScript, every other language I touched let me down. And since my Rust "epiphany", I don't look forward to touching C++ anymore.
+
+At best I would identify as a programmer, but I can't decide if that's me anymore. If you asked what my job was, sure, I'd say programmer. But who am I? What is your modus operandi?
+
+Mike, the 41 year old kid who got a senior game programming job at 19. Mike who is running his second company, who spends most his time _not_ making games yet identifying as a game developer. Who are you?
+
+Identity is complicated.
+
+Lets talk about that next time.
