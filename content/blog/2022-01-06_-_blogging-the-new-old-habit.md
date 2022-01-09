@@ -6,7 +6,7 @@ title = "Blogging: the new old habit"
 +++
 It's time for a new habit.
 
-Like many, I spend too much time on social media. I was able to avoid _Facebook_ hell, I rarely read the _Reddit_, but I couldn't resist the seductive chirping of _The Twitter_.
+Like many, I spend too much time on social media. I was able to avoid _Facebook_ hell, I rarely read _Reddit_, but I couldn't resist the seductive chirping of _The Twitter_.
 
 So to me, social media is Twitter.
 
@@ -42,4 +42,4 @@ I'm reluctant to say _"I'm going to start blogging weekly"_, but I would like th
 
 Most importantly, I want to start. And with this, I've started.
 
-Hello blog. I missed you.
+Hello blog. Hello blogging. I've missed you.
