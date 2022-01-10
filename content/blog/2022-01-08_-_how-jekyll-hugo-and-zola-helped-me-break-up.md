@@ -1,5 +1,5 @@
 +++
-title = "How Jekyll, Hugo, and Zola helped me break-up with C++"
+title = "How blogging software helped me break-up with C++"
 #date = 2022-01-07
 [taxonomies]
 #tags = ["rust","zola","jamstack","ludum-dare","jammer"]
