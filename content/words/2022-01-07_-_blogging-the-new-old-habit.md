@@ -36,8 +36,6 @@ It's not a healthy medium if you think out loud.
 
 ## The agenda
 
-Surprise, I don't have one.
-
 I'm reluctant to say _"I'm going to start blogging weekly"_, but I would like that. I'm not sure what it'll take for me to be consistent. I constantly battle with the idea of something becoming a chore. I want this to stay positive, I want to do this for me, and I want to be excited to do it. I want to be open and unafraid to be venerable. 
 
 Most importantly, I want to start. And with this, I've started.
