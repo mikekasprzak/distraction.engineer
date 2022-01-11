@@ -4,11 +4,11 @@ title = "Discovering the Distraction.Engineer"
 [taxonomies]
 tags = ["self","business","ludum-dare","jammer","filmmaking","gamedev","interactive-snacks","sykhronics","c++","rust"]
 +++
-I think it's healthy to reinvent yourself.
+It's good to reinvent yourself.
 
-We do it a little every year with New Year's resolutions. Maybe you take a step back and you don't like what you see. Maybe you don't know what you see. Whatever it is, it could be better.
+Every year I write down goals, often way more than I can complete. The point isn't to feel bad about not meeting your goals, but to look where you're at, figure out what you're priorities are, and decide what needs to change.
 
-I crossed into my 40's during _the lost year_ (2020). Leading up to it, I left a job making video games for a friend. Classic millennial problem, I wasn't making enough "progress financially" for retirement and all the adult things you're supposed to plan for. I was still obsessed with games, but 20 years deep, my trust in games as a career was waning. 
+I crossed into my 40's during _the lost year_ (2020). Leading up to it, I'd just left a job in December making video games for a friend. It was the _classic_ millennial problem,; I wasn't making enough "progress financially" for retirement and all the adult things you're supposed to plan for. I was still obsessed with games, but I was 20 years deep, and my trust in games as a career was waning. 
 
 In the short term I had some filmmaking I wanted to do. I took a stab a [short film](https://www.youtube.com/watch?v=OtWv8xO94dE), a [mini documentary](https://www.youtube.com/watch?v=iu4805p1yPo), and helped a friend with his [Kickstarter](https://www.kickstarter.com/projects/dereklaufman/creations-vol1). I picked up the video hobby the year before when I saw a need. I enjoy it. It's something I want to do more.
 
@@ -16,11 +16,9 @@ After that, my plan was to find a well paying job that either didn't eat all my 
 
 Resume updated, applications sent and...hey, what's a Corona-virus?
 
-Yes, I was job hunting at the beginning of a pandemic. Nobody knew what's going on, and now nobody was hiring.
-
 > _What a horrible night to have a curse._
 
-It was obvious finding work would take a while.
+I wasn't finding work any time soon. So much for the goals... or so I thought.
 
 Plan B.
 
