@@ -1,9 +1,16 @@
 {% extends "base.html" %}
 
+{% block title %}{{page.title}} | {{super()}}{% endblock title %}
+
 {% block content %}
-<h1 class="title">
-  {{ page.title }}
-</h1>
-<p class="subtitle"><strong>{{ page.date }}</strong></p>
+<h1 class="title">{{page.title}}</h1>
+<sub class="subtitle">
+  {% if page.date %}
+  <span>Published {{page.date | date(format="%A %B %e, %Y")}}</span>
+  {% endif %}
+  {% if page.updated %}
+  | <span>Last Updated {{page.updated | date(format="%A %B %e, %Y")}}</span>
+  {% endif %}
+</sub>
 {{ page.content | safe }}
 {% endblock content %}
