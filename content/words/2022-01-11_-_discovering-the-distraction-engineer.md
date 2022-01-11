@@ -7,11 +7,11 @@ title = "Discovering the Distraction.Engineer"
 +++
 I think it's healthy to reinvent yourself.
 
-We do it a little every year with New Year's resolutions. But maybe you take a step back and you don't like what you see. It could be better.
+We do it a little every year with New Year's resolutions. Maybe you take a step back and you don't like what you see. Maybe you don't know what you see. Whatever it is, it could be better.
 
 I crossed into my 40's during _the lost year_ (2020). Leading up to it, I left a job making video games for a friend. Classic millennial problem, I wasn't making enough "progress financially" for retirement and all the adult things you're supposed to plan for. I was still obsessed with games, but 20 years deep, my trust in games as a career was waning. 
 
-In the short term I had some filmmaking I wanted to do. I took a stab a short film, a mini documentary, and helped a friend with his Kickstarter. I picked up the video hobby the year before when I saw a need. I enjoy it. It's something I want to do more.
+In the short term I had some filmmaking I wanted to do. I took a stab a [short film](https://www.youtube.com/watch?v=OtWv8xO94dE), a [mini documentary](https://www.youtube.com/watch?v=iu4805p1yPo), and helped a friend with his [Kickstarter](https://www.kickstarter.com/projects/dereklaufman/creations-vol1). I picked up the video hobby the year before when I saw a need. I enjoy it. It's something I want to do more.
 
 After that, my plan was to find a well paying job that either didn't eat all my time or my brain, while _on the side_ learn Houdini and Unreal, so I can begin crafting my indie action mind-fuckery dream game.
 
@@ -32,9 +32,11 @@ I was starting a company.
 
 ## Interactively Snacking
 
-A company name I've been sitting on for years was **Interactive Snacks**. After the mouthful that was **Sykhronics**, I wanted something more playful and _actually spellable_. My plan initially was to build a company focused on Instant Games. I'm not sure the term had been coined yet, but I saw the opportunity. 
+A company name I've been sitting on was **Interactive Snacks**. After the mouthful that was **Sykhronics**, I wanted something more playful and _actually spellable_.
 
-This time it would be a corporation. I ran Sykhronics as a sole proprietorship for a decade. Though I could have done more _regular_ business things with it, I made an effort to keep the business small, simple, and solo. I hate doing taxes. The last thing I wanted to do was **TWO** taxes. A sole proprietorship came with other limitations that became more obvious once Canada's small business covid relief benefits entered the picture. It's bananas, but a corporation existing for one year gets access to credit, loans, government support programs, not to mention a lower taxation rate (though if exercised as dividends, at least in Canada it works out about the same).
+My plan initially was to build a company focused on [Instant Games](https://www.fortressofdoors.com/the-future-of-games-is-an-instant-flash-to-the-past/). I forget what I was calling them, but I saw an opportunity. 
+
+This time I would incorporate. Sykhronics began as a personal branding, but I used the name for my business, a sole proprietorship, and I ran that for a decade. I could have done more _regular_ business things with it, I made an effort to keep the business small, simple, and solo. I hate doing taxes. The last thing I wanted to do was **TWO** taxes. A sole proprietorship came with other limitations that became more obvious once Canada's small business covid relief benefits entered the picture. It's bananas, but a corporation existing for one year gets access to credit, loans, government support programs, not to mention a lower taxation rate (though if exercised as dividends, at least in Canada it works out about the same).
 
 On July 1st, 2020, [**Interactive Snacks Limited**](https://interactivesnacks.com) was incorporated.
 
@@ -92,7 +94,7 @@ I'd like to figure out who I am. Take and make more time to explore that. I love
 
 ## The Distraction.Engineer
 
-I like naming things, so lets give that a go.
+I like naming things, so lets give it a go.
 
 If I'm not a Game Developer, what am I? What do I do?
 
@@ -100,21 +102,23 @@ I've made games, I've inspired with events, I've entertained.
 
 I'm obsessed with systems and creating. I like building.
 
-As a creator I've never liked being told to _staying in my lane_.
+As a creator I've never liked being told to _stay in my lane_.
 
 What's a fun way to describe this?
 
-I decided to name this next generation of Mike, the post "Game Developer Mike" generation as "Mike the Distraction.Engineer", or simply **_The Distraction.Engineer_**.
+As you noticed, I decided to name this next generation of Mike, the post "Game Developer Mike" generation as "Mike the Distraction.Engineer", or simply **_The Distraction.Engineer_**.
 
 I think it's a catchy name, but I also thought Sykhronics was cool (I still do).
 
 
 ## What is the Distraction.Engineer?
 
-Right now it's this blog.
+A modus operandi, and this blog.
 
-In time I'd like to use it as my personal branding, like how Sykhronics was before it became my (now defunct) game company.
+In time I'd like to use it as my personal branding, like how I used Sykhronics before it became my defunct game company.
 
-Whenever we return to a world that has us meeting IRL again, I'll design and carry some fresh cards/stickers promoting my personal brand.
+Whenever we return to a world where we meet IRL again, I'd like to design and carry cards or stickers for it.
 
-My gosh, maybe some day I'll publish some music under the name.
+Heck, I might publish some music here.
+
+The Distraction.Engineer is whatever I want it to be. Stay a while and listen.
