@@ -1,5 +1,5 @@
 +++
-title = "Finding the Distraction.Engineer"
+title = "Discovering the Distraction.Engineer"
 #date = 2022-01-09
 #draft = true
 [taxonomies]
