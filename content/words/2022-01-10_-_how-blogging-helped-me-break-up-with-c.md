@@ -2,7 +2,7 @@
 title = "How blogging software helped me break-up with C++"
 #date = 2022-01-07
 [taxonomies]
-#tags = ["rust","zola","jamstack","ludum-dare","jammer"]
+tags = ["blogging","rust","zola","wordpress","jamstacks","github","cloudflare","static-web","ludum-dare","jammer","interactive-snacks"]
 +++
 I've been blogging and journaling [for decades](https://toonormal.com). I do regret [not writing more](/blog/blogging-the-new-old-habit/), after years of succumbing to social media.
 

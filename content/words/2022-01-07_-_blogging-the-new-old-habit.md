@@ -2,7 +2,7 @@
 title = "Blogging: the new old habit"
 #date = 2022-01-06
 [taxonomies]
-#tags = ["twitter", "adhd", "personal"]
+tags = ["self","social-media", "impostor-syndrome", "adhd", "blogging"]
 +++
 It's time for a new habit.
 
@@ -23,7 +23,7 @@ To me blogging is a distraction, but given how my brain works, it's a productive
 So, generally speaking, goal #1 for 2022 is to write more.
 
 
-## The imposter
+## The impostor
 
 As my social media use grew, blogging felt less important to me. Social media became where my casual thoughts went. I didn't stop using my blog though, it just switched to something I call a _"note-blog"_. Like a notebook, whatever I was up to, I took notes; But like a blog, I tried to structure it. I wasn't too strict with my structure, at most requiring an intro before I delved into the chaos. It was good, and I plan to continue this in its own section.
 
