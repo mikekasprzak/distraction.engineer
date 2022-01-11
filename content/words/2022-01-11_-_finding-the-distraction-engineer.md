@@ -3,9 +3,9 @@ title = "Discovering the Distraction.Engineer"
 #date = 2022-01-09
 #draft = true
 [taxonomies]
-#tags = ["rust","zola","jamstack","ludum-dare","jammer"]
+#tags = ["self","zola","jamstack","ludum-dare","jammer"]
 +++
-I think it's good to reinvent yourself.
+Every so often, I think it's good and healthy to reinvent yourself.
 
 We do it a little every year with New Year's resolutions. But maybe you take a step back and you don't like what you see. It could be better.
 
