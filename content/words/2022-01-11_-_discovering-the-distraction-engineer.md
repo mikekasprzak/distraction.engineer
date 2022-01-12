@@ -1,6 +1,7 @@
 +++
 title = "Discovering the Distraction.Engineer"
 #date = 2022-01-09
+draft = true
 [taxonomies]
 tags = ["self","business","ludum-dare","jammer","filmmaking","gamedev","interactive-snacks","sykhronics","c++","rust"]
 +++
