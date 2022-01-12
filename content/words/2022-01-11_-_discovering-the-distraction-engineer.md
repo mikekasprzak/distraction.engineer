@@ -5,15 +5,46 @@ draft = true
 [taxonomies]
 tags = ["self","business","ludum-dare","jammer","filmmaking","gamedev","interactive-snacks","sykhronics","c++","rust"]
 +++
-It's good to reinvent yourself.
+Every year I write down goals, way more than I can complete. The point isn't to feel bad as you fail to meet them, but to take a macro look where you're at; Understand your priorities, decide where you want to go, and what needs to change to get there.
 
-Every year I write down goals, often way more than I can complete. The point isn't to feel bad about not meeting your goals, but to look where you're at, figure out what you're priorities are, and decide what needs to change.
+I like naming things. I have my given name, but I like having chosen names as well (handles). When you name something, you're owning it. Projects, ambitions, and concepts. A name might only be the working title, and shipping with a different name doesn't change your bond. You'll always be connected with something you named.
 
-I crossed into my 40's during _the lost year_ (2020). Leading up to it, I'd just left a job in December making video games for a friend. It was the _classic_ millennial problem,; I wasn't making enough "progress financially" for retirement and all the adult things you're supposed to plan for. I was still obsessed with games, but I was 20 years deep, and my trust in games as a career was waning. 
+When you choose a name, your pen name or your band name, it's something done in the moment. It's a snapshot of who you are, or your ambition. And as we grow, we change. Our ambitions change. A name might not fit us anymore, and that's okay.
+
+It's good to be self aware. I think it's healthy to reinvent yourself.
+
+## Gamma rays and solar flares
+
+When I was a teenager, I created the branding: **Gamma Flare Games**.
+
+Why Gamma Flare Games? Because it felt unique to me, and I thought it sounded cool. My sense of _cool_ is where most of my names come from. Was it a company? No, but I wanted it to be.
+
+Making games was everything to me. I avoided homework like the plague, and spent every waking moment thinking about making games. I created Gamma Flare to be my ambition.
+
+And it worked! I went on to make and release several games as Gamma Flare, but not commercially. I was a kid. Money wasn't something I understood yet.
+
+## Psychotic electronics
+
+By college (1999) I'd grown tired of the Gamma Flare name. It didn't really encapsulate who I was anymore. I was learning more and more about technology, creating art, making music, in addition to making games. 
+
+So I created a new branding: **Sykhronics**.
+
+Sykhronics is a mashup of psychotic and electronics. "Psych-ronics", but for style flair I dropped the P and made CH into KH. If I'm honest, I still think Sykhronics is a cool name, but I later learned the frustration of choosing names others can't say or spell. Sykhronics encapsulated my ambition as a more rounded creative.
+
+Sykhronics followed me for decades. In 2006 I founded Sykhronics Entertainment, a sole proprietorship for my works as an independent game developer. That lasted until around 2016, when I decided not to renew my business license.
+
+I didn't exactly stop using Sykhronics after shelving my business. I did do a soft reboot as **Sykronics**, losing the H, but otherwise had the same intentions as the original Sykhronics: make games and art. I was proud of my new business cards.
+
+I wouldn't say I was lost, but I didn't have the same ambition. I was in my mid-30's, and over the next few years took time to figure out how to be a proper adult, start dating, and whatnot. Maybe I was lost, but it was time for me to be lost.
+
+
+## The other lost year
+
+Not to be confused with _being lost_, I crossed into my 40's during _the lost year_ (2020). Leading up to it, I'd just left a making video games for a friend. It was the _classic_ millennial problem. I hadn't making enough "progress financially" for retirement and everything adults are supposed to plan for. I was still obsessed with games, but I was 20 years deep, and my trust in a games career was waning. 
 
 In the short term I had some filmmaking I wanted to do. I took a stab a [short film](https://www.youtube.com/watch?v=OtWv8xO94dE), a [mini documentary](https://www.youtube.com/watch?v=iu4805p1yPo), and helped a friend with his [Kickstarter](https://www.kickstarter.com/projects/dereklaufman/creations-vol1). I picked up the video hobby the year before when I saw a need. I enjoy it. It's something I want to do more.
 
-After that, my plan was to find a well paying job that either didn't eat all my time or my brain, while _on the side_ learn Houdini and Unreal, so I can begin crafting my indie action mind-fuckery dream game.
+After that, my plan was to find a well paying job that either didn't eat all my time or my brain, while _on the side_ learn Houdini and Unreal, so I can finally begin crafting my indie action mind-fuckery dream game.
 
 Resume updated, applications sent and...hey, what's a Corona-virus?
 
