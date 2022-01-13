@@ -5,8 +5,33 @@
 
 <p>Welcome to Mike's brand new ugly website. I'll make it pretty later.</p>
 
-<h2>Blog and Projects feed</h2>
-<p>Click <a href="/words/">here</a> to see my posts.</p>
+<h2>Blog and Projects Log</h2>
+{% set_global projects_feed = [] %}
+{% set_global projects_sections = [] %}
+
+{# Grab all the projects and merge them into a single feed #}
+{% set projects = get_section(path="projects/_index.md") %}
+{% for project in projects.subsections %}
+    {% set section = get_section(path=project) %}
+    {% set_global projects_feed = projects_feed | concat(with=section.pages) %}
+    {% set_global projects_sections = projects_sections | concat(with=section) %}
+{% endfor %}
+
+{# Grab the blog #}
+{% set blog = get_section(path="words/_index.md") %}
+
+{# Merge the blog and project feeds #}
+{% set feed = blog.pages | concat(with=projects_feed) | filter(attribute="date") | sort(attribute="date") %}
+
+<ul>
+    {% for page in feed | reverse %}
+        {% set page_section = "" %}
+        {% if page.components.0 != "words" %}
+            {% set page_section = page.components.1 %}
+        {% endif %}
+        <li>{{page.date}} - {{page_section}} <a href="{{page.permalink | safe}}">{{page.title}}</a></li>
+    {% endfor %}
+</ul>
 
 <h2>Notes feed</h2>
 
