@@ -4,6 +4,7 @@
 <h1 class="title">
   {{ section.title }}
 </h1>
+{{section.content | safe}}
 <ul>
   <li><a href="..">..</a></li>
   {% for subsection in section.subsections %}
