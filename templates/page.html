@@ -5,10 +5,11 @@
 {% block content %}
 <article class="h-entry">
   <h1 class="p-name title">{{page.title}}</h1>
-  <div class="p-author h-card hidden">{{author}}</div>
+  <a href="/" rel="author"><span class="p-author h-card hidden"><img class="u-logo u-photo" src="{{avatar}}">{{author}}</span></a>
+  <a class="u-url hidden" href="{{page.path | safe}}">Permalink</a>
   <sub class="subtitle">
-    {% if page.date %}<span>Published <time class="dt-published" datetime='{{page.date | date(format="%F %T")}}'>{{page.date | date(format="%A %B %e, %Y")}}</time></span>{% endif %}
-    {% if page.updated %}<span>Last Updated <time class="dt-updated" datetime='{{page.updated | date(format="%F %T")}}'>{{page.updated | date(format="%A %B %e, %Y")}}</time></span>{% endif %}
+    {% if page.date %}<span>Published <time class="dt-published" datetime='{{page.date | date(format="%+")}}'>{{page.date | date(format="%A %B %e, %Y")}}</time></span>{% endif %}
+    {% if page.updated %}<span>Last Updated <time class="dt-updated" datetime='{{page.updated | date(format="%+")}}'>{{page.updated | date(format="%A %B %e, %Y")}}</time></span>{% endif %}
   </sub>
   {% if page.summary %}<div class="p-summary hidden">{{page.summary | safe}}</div>{% endif %}
   <div class="e-content">{{page.content | safe}}</div>
