@@ -32,12 +32,24 @@
             {% set prefix = "[" ~ page_section.title ~ "]" %}
         {% endif %}
         <li>{{page.date}} - {{prefix}} <a href="{{page.permalink | safe}}">{{page.title}}</a></li>
+    {% else %}
+        No posts.
     {% endfor %}
 </ul>
 
+{% set notes = get_section(path="notes/_index.md") %}
+{% if notes %}
 <h2>Notes feed</h2>
+<ul>
+    {% for page in notes.pages %}
+        <li><a href="{{page.permalink | safe}}">{{page.title}}</a></li>
+    {% else %}
+        No notes.
+    {% endfor %}
+</ul>
+{% endif %}
 
-<h2>Creative Works feed</h2>
+{#<h2>Creative Works feed</h2>#}
 
 <h2>Off site</h2>
 <p>
