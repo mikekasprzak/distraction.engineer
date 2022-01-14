@@ -3,14 +3,14 @@
 {% block title %}{{page.title}} | {{super()}}{% endblock title %}
 
 {% block content %}
-<h1 class="title">{{page.title}}</h1>
-<sub class="subtitle">
-  {% if page.date %}
-  <span>Published {{page.date | date(format="%A %B %e, %Y")}}</span>
-  {% endif %}
-  {% if page.updated %}
-  | <span>Last Updated {{page.updated | date(format="%A %B %e, %Y")}}</span>
-  {% endif %}
-</sub>
-{{ page.content | safe }}
+<article class="h-entry">
+  <h1 class="p-name title">{{page.title}}</h1>
+  <div class="p-author h-card hidden">{{author}}</div>
+  <sub class="subtitle">
+    {% if page.date %}<span>Published <time class="dt-published" datetime='{{page.date | date(format="%F %T")}}'>{{page.date | date(format="%A %B %e, %Y")}}</time></span>{% endif %}
+    {% if page.updated %}<span>Last Updated <time class="dt-updated" datetime='{{page.updated | date(format="%F %T")}}'>{{page.updated | date(format="%A %B %e, %Y")}}</time></span>{% endif %}
+  </sub>
+  {% if page.summary %}<div class="p-summary hidden">{{page.summary | safe}}</div>{% endif %}
+  <div class="e-content">{{page.content | safe}}</div>
+</article>
 {% endblock content %}

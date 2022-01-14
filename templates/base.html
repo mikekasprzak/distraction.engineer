@@ -6,17 +6,21 @@
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="alternate" type="application/atom+xml" title="Feed" href="/atom.xml"/>
+  {% block feeds %}{% endblock %}
 
   <link rel="authorization_endpoint" href="https://indieauth.com/auth">
   <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
   <link rel="microsub" href="https://aperture.p3k.io/microsub/722">
 
+  <link rel="stylesheet" type="text/css" href="/style.css">
   <title>{% block title %}{{config.title}}{% endblock %}</title>
 </head>
 
 <body>
   <section class="section">
     <div class="container">
+      {% set_global author = "Mike Kasprzak" %}
+      {% set_global avatar = "/chicken.png" %}
       {% block content %} {% endblock %}
     </div>
   </section>
