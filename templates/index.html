@@ -25,11 +25,13 @@
 
 <ul>
     {% for page in feed | reverse %}
-        {% set page_section = "" %}
+        {% set prefix = "" %}
         {% if page.components.0 != "words" %}
-            {% set page_section = page.components.1 %}
+            {% set parent = page.ancestors | last %}
+            {% set page_section = get_section(path=parent) %}
+            {% set prefix = "[" ~ page_section.title ~ "]" %}
         {% endif %}
-        <li>{{page.date}} - {{page_section}} <a href="{{page.permalink | safe}}">{{page.title}}</a></li>
+        <li>{{page.date}} - {{prefix}} <a href="{{page.permalink | safe}}">{{page.title}}</a></li>
     {% endfor %}
 </ul>
 
