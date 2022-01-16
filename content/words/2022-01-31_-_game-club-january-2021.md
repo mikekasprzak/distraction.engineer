@@ -2,11 +2,13 @@
 title = "Game Club: December-January 2021"
 draft = true
 [taxonomies]
-tags = ["gaming"]
+tags = ["gaming","game-club"]
 +++
 I often say I don't play games anymore, but I'm making an effort to change that. I keep buying gaming hardware that goes unused. I'm also terrible about taking time for me, for my own relaxation and enjoyment.
 
 So alright! I keep putting "play more games" on my new years resolutions. Time to do that.
+
+You can view all entries in this series via the [game-club](/tags/game-club/) tag.
 
 
 ## MiSTer FPGA
