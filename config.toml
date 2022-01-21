@@ -5,6 +5,8 @@ description = "Thoughts and works by Mike Kasprzak"
 compile_sass = true
 build_search_index = true
 
+ignored_content = ["README.markdown"]
+
 taxonomies = [
     {name="tags"}#, feed=true}
 ]

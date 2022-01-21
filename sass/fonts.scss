@@ -1,0 +1,75 @@
+/* Here's a crazy story: Firefox doesn't support Variable OpenType fonts in WOFF2 containers. */
+/* They support every other permutation though, so we had to settle on Variable TrueType fonts instead. */
+/* https://bugzilla.mozilla.org/show_bug.cgi?id=1302685 */
+
+/* REGULAR */
+@font-face {
+    font-family: 'source sans';
+    src: url('/fonts/source-sans/VAR/SourceSans3VF-Roman.ttf.woff2') format('woff2-variations'),
+        url('/fonts/source-sans/WOFF2/SourceSans3-Regular.otf.woff2') format('woff2'),
+        url('/fonts/source-sans/WOFF/SourceSans3-Regular.otf.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'source sans';
+    src: url('/fonts/source-sans/VAR/SourceSans3VF-Italic.ttf.woff2') format('woff2-variations'),
+        url('/fonts/source-sans/WOFF2/SourceSans3-It.otf.woff2') format('woff2'),
+        url('/fonts/source-sans/WOFF/SourceSans3-It.otf.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* LIGHT */
+@font-face {
+    font-family: 'source sans';
+    src: url('/fonts/source-sans/VAR/SourceSans3VF-Roman.ttf.woff2') format('woff2-variations'),
+        url('/fonts/source-sans/WOFF2/SourceSans3-Light.otf.woff2') format('woff2'),
+        url('/fonts/source-sans/WOFF/SourceSans3-Light.otf.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'source sans';
+    src: url('/fonts/source-sans/VAR/SourceSans3VF-Italic.ttf.woff2') format('woff2-variations'),
+        url('/fonts/source-sans/WOFF2/SourceSans3-LightIt.otf.woff2') format('woff2'),
+        url('/fonts/source-sans/WOFF/SourceSans3-LightIt.otf.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* BOLD */
+@font-face {
+    font-family: 'source sans';
+    src: url('/fonts/source-sans/VAR/SourceSans3VF-Roman.ttf.woff2') format('woff2-variations'),
+        url('/fonts/source-sans/WOFF2/SourceSans3-Bold.otf.woff2') format('woff2'),
+        url('/fonts/source-sans/WOFF/SourceSans3-Bold.otf.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'source sans';
+    src: url('/fonts/source-sans/VAR/SourceSans3VF-Italic.ttf.woff2') format('woff2-variations'),
+        url('/fonts/source-sans/WOFF2/SourceSans3-BoldIt.otf.woff2') format('woff2'),
+        url('/fonts/source-sans/WOFF/SourceSans3-BoldIt.otf.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* BLACK */
+@font-face {
+    font-family: 'source sans';
+    src: url('/fonts/source-sans/VAR/SourceSans3VF-Roman.ttf.woff2') format('woff2-variations'),
+        url('/fonts/source-sans/WOFF2/SourceSans3-Black.otf.woff2') format('woff2'),
+        url('/fonts/source-sans/WOFF/SourceSans3-Black.otf.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'source sans';
+    src: url('/fonts/source-sans/VAR/SourceSans3VF-Italic.ttf.woff2') format('woff2-variations'),
+        url('/fonts/source-sans/WOFF2/SourceSans3-BlackIt.otf.woff2') format('woff2'),
+        url('/fonts/source-sans/WOFF/SourceSans3-BlackIt.otf.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+}
