@@ -2,6 +2,7 @@
 /* They support every other permutation though, so we had to settle on Variable TrueType fonts instead. */
 /* https://bugzilla.mozilla.org/show_bug.cgi?id=1302685 */
 
+/* Source Sans - General Font */
 /* REGULAR */
 @font-face {
     font-family: 'source sans';
@@ -72,4 +73,14 @@
         url('/fonts/source-sans/WOFF/SourceSans3-BlackIt.otf.woff') format('woff');
     font-weight: 900;
     font-style: italic;
+}
+
+
+/* Major Mono - Logo Font */
+@font-face {
+    font-family: 'major mono';
+    src: url('/fonts/major-mono/MajorMonoDisplay-Regular.ttf.woff2') format('woff2'),
+        url('/fonts/major-mono/MajorMonoDisplay-Regular.ttf.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
 }
