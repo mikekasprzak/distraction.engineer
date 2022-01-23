@@ -42,6 +42,18 @@ I'm shocked. I'm a self proclaimed Metroidvania Castlevania nerd, but I don't th
 
 Greatest game ever? No. It's a damn good Castlevania and Metroidvania though.
 
+200% explored.
+
+
+## Castlevania: Aria of Sorrow (GameBoy Advance)
+Cool. This one I played before for sure. I don't remember getting the good ending, but I do remember the Dracula thing, so maybe.
+
+I'm a big fan of the stealing powers mechanic. I'm glad IGA stole it for Bloodstained.
+
+100% explored. While I didn't get 100% powers, I checked online and I didn't see any powers I was missing-out on. Last one I grabbed was the Sky Fish, which required the Chronomage, etc. I was annoyed that unless you get lost early in the game, you don't unlock dive kick until discovering the final room.
+
+I'm excited to play the sequel again, though MiSTer doesn't (and may never) support Nintendo DS.
+
 
 ## Ultima 8 (MS DOS)
 Another of my favorite games. I don't think I've played it since I stopped using MS DOS, as I was completely unaware of the flags that trigger story events, such as the conflict between the "Tempests". 
