@@ -3,6 +3,17 @@
     /* Remove web specific elements */
     header, footer, aside, form {
         display: none;
+
+        /* We might need this */
+        /*
+        &.print {
+            display: block;
+        }
+        */
+    }
+    /* Print-only elements */
+    .print {
+        display: block;
     }
     /* Fit article to page */
     article {

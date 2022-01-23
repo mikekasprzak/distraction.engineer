@@ -9,7 +9,7 @@ body {
 }
 
 /* Common helpers */
-.hidden {
+.hidden, .print {
     display: none;
 }
 
@@ -55,6 +55,10 @@ body {
         > * {
             margin: auto;
         }
+    }
+
+    > header.print .logo {
+        font-size: xx-large;
     }
 }
 

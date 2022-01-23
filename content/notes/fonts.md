@@ -66,3 +66,15 @@ sfnt2woff font-name.otf
 woff2sfnt font-name.woff > out.otf
 # output is sent to stdout, and should be captured
 ```
+
+## Advice
+* [How best to load web fonts](https://www.freecodecamp.org/news/web-fonts-in-2018-f191a48367e8/)
+* [5 steps to faster web fonts](https://iainbean.com/posts/2021/5-steps-to-faster-web-fonts/)
+
+### Unsorted
+* [Font Subsetter](https://everythingfonts.com/subsetter)
+* [Best Font Size](https://www.readz.com/best-font-size)
+* [16 pixel body copy](https://www.smashingmagazine.com/2011/10/16-pixels-body-copy-anything-less-costly-mistake/)
+* [Font Size | CSS Tricks](https://css-tricks.com/almanac/properties/f/font-size/)
+* [some doctor](https://drmarkwomack.com/a-writing-handbook/style/typography/)
+* [Quick Guide to printable web pages](https://sympli.io/blog/a-quick-guide-to-css-for-printable-webpages/)

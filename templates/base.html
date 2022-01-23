@@ -27,8 +27,13 @@
 
 <body>
   {% block header %}
+  {# Navigation Header #}
   <header class="nav">
     <div><a class="logo" href="/">{{config.title}}</a></div>
+  </header>
+  {# Print Header #}
+  <header class="print">
+    <span class="logo">{{config.title}}</span>
   </header>
   {% endblock %}
   {% block section %}<section class="content">{% block content %}{% endblock %}</section>{% endblock %}
