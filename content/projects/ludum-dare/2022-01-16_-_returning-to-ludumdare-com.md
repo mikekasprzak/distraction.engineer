@@ -1,13 +1,13 @@
 +++
 title = "Returning to ludumdare.com"
 #date = "2022-01-15"
-draft = true
+#draft = true
 [taxonomies]
 tags = ["ludum-dare","jammer","interactive-snacks"]
 +++
-While [writing about privacy](/projects/ludum-dare/privacy-and-ownership-goals/), I found myself thinking about user support. Having a support-database is pretty common, and I wasn't super thrilled about creating one on FreshDesk. For one it's _yet another_ series of accounts, validations, and pages I would have to manage. Bringing people in to help would be a pain. It would be better if we could build a support database using something we already use.
+While [writing about privacy](/projects/ludum-dare/privacy-and-ownership-goals/), I found myself thinking about user support. Having a support database is pretty common, and I wasn't super thrilled about creating one on FreshDesk. For one it's _yet another_ series of accounts, validations, and pages I would have to manage. Bringing people in to help would be a pain. It would be better if we could build a support database using something we already use.
 
-I eventually realized a support database is just a static-website, like this blog. Hey! Zola would be perfect for building a support database! Not only does it display content, but once the data is on GitHub, **ANYONE** can contribute! Now that's more like.
+I eventually realized a support database is just a static website, like this blog. Hey! Zola would be perfect for building a support database! Not only does it display content, but once the data is on GitHub, **ANYONE** can contribute! Now that's more like.
 
 Okay, lets create a support website. Where does it go, and what's the URL?
 
@@ -73,5 +73,7 @@ For the sake of not breaking the internet, the domain will still exist. We'll ne
 
 A sensible way to structure things would be to put the _static stuff_ on `ludumdare.com`, and then make the event website a subdomain: `jam.ludumdare.com`.
 
-I think this is the goal.
+This is the goal.
+
+Not this year, but in 2023 I would like to see us running events on `jam.ludumdare.com`, finally sun-setting `ldjam.com` after 7 years.
 

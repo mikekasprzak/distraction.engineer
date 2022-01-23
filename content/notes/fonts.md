@@ -1,5 +1,5 @@
 +++
-title = "Web Fonts"
+title = "Font Technology"
 +++
 
 ## Glossary
