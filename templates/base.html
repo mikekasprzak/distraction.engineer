@@ -19,8 +19,8 @@
   <link rel="preload" as="font" href="/fonts/source-sans/VAR/SourceSans3VF-Italic.ttf.woff2" type="font/woff2" crossorigin="anonymous">
 #}
 
-  <link rel="stylesheet" type="text/css" href="/style.css">
-  <link rel="stylesheet" type="text/css" href="/fonts.css">
+  <link rel="stylesheet" type="text/css" href="/style.css?version={{get_file_hash(path='/style.css', sha_type=256)}}">
+  <link rel="stylesheet" type="text/css" href="/fonts.css?version={{get_file_hash(path='/fonts.css', sha_type=256)}}">
   <title>{% block title %}{{config.title}}{% endblock %}</title>
 </head>
 
