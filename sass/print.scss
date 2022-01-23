@@ -1,0 +1,27 @@
+/* Page Margins */
+@media print {
+    /* Remove web specific elements */
+    header, footer, aside, form {
+        display: none;
+    }
+    /* Fit article to page */
+    article {
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+}
+@page {
+    margin: 2cm;
+}
+
+/* Includes URL's in brackets for the print version */
+@media print {
+    a:after {
+        content: "("attr(href)")";
+    }
+}
+
+/* Print style changes */
+@media print {
+}

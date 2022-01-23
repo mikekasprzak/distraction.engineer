@@ -1,13 +1,25 @@
+/* Document root */
+html {
+    font-family: "source sans", sans-serif;
+    font-weight: 400;
+    font-size: 12pt;
+}
+
+/* Common helpers */
 .hidden {
     display: none;
 }
 
-html {
-    font-family: "source sans", sans-serif;
-    font-weight: 400;
+/* I promise to only use <pre> for code */
+pre {
+    padding: 1em;
 }
 
+/* Distraction Engineer logotype */
 .logo {
     font-family: "major mono", monospace;
     font-weight: 400;
 }
+
+
+/* mobile? */
