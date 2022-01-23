@@ -1,8 +1,12 @@
 {% extends "base.html" %}
 
-{% block content %}
-<h1 class="title logo">{{config.title}}</h1>
+{% block header %}
+<header class="hero">
+    <h1 class="logo">{{config.title}}</h1>
+</header>
+{% endblock %}
 
+{% block content %}
 <p>Welcome to Mike's brand new ugly website. I'll make it pretty later.</p>
 
 <h2>Blog and Projects Log</h2>
@@ -71,7 +75,7 @@
     <span class="p-nickname">PoVRAZOR</span>
     <span class="p-nickname p-callsign">VA3POV</span>
     <span class="p-note">Mike engineers distractions. He was a professional game developer for over 20 years. He's best known for being the caretaker and co-creator of Ludum Dare, a popular online game jam event. Mike owns and operates Interactive Snacks Limited, a small Canadian software company. You may occasionally find him nerding-out about retro gaming, cooking, electronics, audio and video production.</span>
-    <span class="u-logo u-photo">{{avatar}}</span>
+    <span class="u-logo u-photo">{{config.extra.avatar}}</span>
     <a class="u-email" rel="me" href="mailto:the@distraction.engineer">e-mail</span>
     <a class="u-url u-uid" rel="me" href="https://distraction.engineer">distraction.engineer</a>
     <span class="u-category">developer</span>

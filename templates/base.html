@@ -26,13 +26,15 @@
 </head>
 
 <body>
-  <section class="section">
-    <div class="container">
-      {% set_global author = "Mike Kasprzak" %}
-      {% set_global avatar = "/me/Chicken128B-B.png" %}
-      {% block content %} {% endblock %}
-    </div>
-  </section>
+  {% block header %}
+  <header class="nav">
+    <div><a class="logo" href="/">{{config.title}}</a></div>
+  </header>
+  {% endblock %}
+  {% block section %}<section class="content">{% block content %}{% endblock %}</section>{% endblock %}
+  {% block footer %}
+  <footer class="hidden"></footer>
+  {% endblock %}
 </body>
 
 </html>
