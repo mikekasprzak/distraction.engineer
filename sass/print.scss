@@ -1,5 +1,8 @@
 /* Page Margins */
 @media print {
+    html {
+        font-size: 10pt;
+    }
     /* Remove web specific elements */
     body > header, 
     body > footer {
@@ -23,7 +26,7 @@
 /* Print style changes */
 @media print {
     /* Includes URL's in brackets for the print version */
-    .content article p {
+    main article p {
         /* include URL's in brackets for the print version */
         a:after {
             content: " ("attr(href)")";

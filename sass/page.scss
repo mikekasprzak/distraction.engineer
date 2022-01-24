@@ -6,11 +6,25 @@ html {
 }
 code {
     font-family: "source code", monospace;
-    font-size: 12pt;
 }
 body {
     margin: 0;
     background: var(--page-background);
+}
+main {
+    a {
+        color: var(--link-color);
+        text-decoration: none;
+
+        &:hover {
+            color: var(--lit-color);
+            text-decoration: underline;
+        }
+    }
+
+    li::marker {
+        color: var(--page-light-color);
+    }
 }
 
 /* Common helpers */
