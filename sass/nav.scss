@@ -1,0 +1,25 @@
+/* Top level */
+body {
+    > header.nav {
+        /*display: flex;
+        align-items: center;
+        justify-content: left;*/
+        height: 3em;
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        .logo {
+            font-size: large;
+        }
+
+        > * {
+            margin: auto;
+        }
+    }
+
+    > header.print .logo {
+        font-size: xx-large;
+    }
+}

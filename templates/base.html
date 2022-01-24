@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="alternate" type="application/atom+xml" title="Feed" href="/atom.xml"/>
+  <link rel="alternate" type="application/atom+xml" title="Feed" href="/{{config.feed_filename}}"/>
   {% block feeds %}{% endblock %}
 
   <link rel="authorization_endpoint" href="https://indieauth.com/auth">
@@ -17,23 +17,19 @@
 {#
   <link rel="preload" as="font" href="/fonts/source-sans/VAR/SourceSans3VF-Regular.ttf.woff2" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" as="font" href="/fonts/source-sans/VAR/SourceSans3VF-Italic.ttf.woff2" type="font/woff2" crossorigin="anonymous">
-#}
-
   <link rel="stylesheet" type="text/css" href="/style.css?version={{get_file_hash(path='/style.css', sha_type=256)}}">
   <link rel="stylesheet" type="text/css" href="/fonts.css?version={{get_file_hash(path='/fonts.css', sha_type=256)}}">
   <link rel="stylesheet" type="text/css" href="/print.css?version={{get_file_hash(path='/print.css', sha_type=256)}}">
+#}
+
+  <link rel="stylesheet" type="text/css" href="/style.css">
   <title>{% block title %}{{config.title}}{% endblock %}</title>
 </head>
 
 <body>
   {% block header %}
-  {# Navigation Header #}
   <header class="nav">
     <div><a class="logo" href="/">{{config.title}}</a></div>
-  </header>
-  {# Print Header #}
-  <header class="print">
-    <span class="logo">{{config.title}}</span>
   </header>
   {% endblock %}
   {% block section %}<section class="content">{% block content %}{% endblock %}</section>{% endblock %}

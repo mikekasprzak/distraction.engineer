@@ -1,6 +1,6 @@
 base_url = "https://distraction.engineer"
 title = "The Distraction.Engineer"
-description = "Thoughts and works by Mike Kasprzak"
+description = "The words and works of Mike Kasprzak"
 
 compile_sass = true
 build_search_index = true

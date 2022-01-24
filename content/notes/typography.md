@@ -1,5 +1,6 @@
 +++
 title = "Typography"
+description = "lettering, typesetting, on the page and on the web"
 draft = true
 +++
 To use type properly, we need to understand the medium on which we print.

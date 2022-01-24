@@ -1,0 +1,29 @@
+/* Document root */
+html {
+    font-family: "source sans", sans-serif;
+    font-weight: 400;
+    font-size: 12pt;
+}
+body {
+    margin: 0;
+}
+
+/* Common helpers */
+.hidden, .print {
+    display: none;
+}
+
+/* Distraction Engineer logotype */
+.logo {
+    font-family: "major mono", monospace;
+    font-weight: 400;
+}
+
+/* Top level */
+body {
+    /* All children of the body, default to a fixed width */
+    > * {
+        width: 1280px;
+        margin: auto;
+    }
+}

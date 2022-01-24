@@ -24,21 +24,32 @@
     {% set_global projects_sections = projects_sections | concat(with=section) %}
 {% endfor %}
 
+{# Grab the articles #}
+{% set articles = get_section(path="articles/_index.md") %}
+
 {# Grab the blog #}
 {% set blog = get_section(path="words/_index.md") %}
 
 {# Merge the blog and project feeds #}
-{% set feed = blog.pages | concat(with=projects_feed) | filter(attribute="date") | sort(attribute="date") %}
+{% set feed = blog.pages | concat(with=projects_feed) | concat(with=articles.pages) | filter(attribute="date") | sort(attribute="date") %}
 
 <ul>
     {% for page in feed | reverse %}
         {% set prefix = "" %}
-        {% if page.components.0 != "words" %}
+        {% set suffix = "" %}
+        {% if page.components.0 == "projects" %}
             {% set parent = page.ancestors | last %}
             {% set page_section = get_section(path=parent) %}
-            {% set prefix = "[" ~ page_section.title ~ "]" %}
+            {% set suffix = "[Project: " ~ page_section.title ~ "]" %}
         {% endif %}
-        <li>{{page.date}} - {{prefix}} <a href="{{page.permalink | safe}}">{{page.title}}</a></li>
+        {% if page.components.0 == "articles" %}
+            {% if page.extra.sponsor %}
+                {% set suffix = "[Article, sponsored by " ~ page.extra.sponsor ~ "]" %}
+            {% else %}
+                {% set suffix = "[Article]" %}
+            {% endif %}
+        {% endif %}
+        <li>{{page.date}} - {{prefix}} <a href="{{page.permalink | safe}}">{{page.title}}</a> {{suffix}}</li>
     {% else %}
         No posts.
     {% endfor %}
@@ -70,4 +81,5 @@
 </p>
 
 {{indieweb::hcard()}}
+<pre>{{__tera_context | escape | safe}}</pre>
 {% endblock content %}

@@ -1,72 +1,7 @@
-/* Document root */
-html {
-    font-family: "source sans", sans-serif;
-    font-weight: 400;
-    font-size: 12pt;
-}
-body {
-    margin: 0;
-}
-
-/* Common helpers */
-.hidden, .print {
-    display: none;
-}
-
-/* I promise to only use <pre> for code */
-pre {
-    padding: 1em;
-}
-
-/* Top level */
-body {
-    /* All children of the body, default to a fixed width */
-    > * {
-        width: 1280px;
-        margin: auto;
-    }
-
-    /* Distraction Engineer logotype */
-    > header .logo {
-        font-family: "major mono", monospace;
-        font-weight: 400;
-    }
-
-    > header.hero {
-        h1 {
-            
-        }
-    }
-
-    > header.nav {
-        display: flex;
-        align-items: center;
-        justify-content: left;
-        height: 3em;
-
-        a {
-            color: black;
-            text-decoration: none;
-        }
-        .logo {
-            font-size: large;
-        }
-
-        > * {
-            margin: auto;
-        }
-    }
-
-    > header.print .logo {
-        font-size: xx-large;
-    }
-}
-
-
-.content {
-    article {
-
-    }
-}
-
-/* mobile? */
+@import "page.scss";
+@import "nav.scss";
+@import "hero.scss";
+@import "article.scss";
+@import "fonts.scss";
+@import "mobile.scss";
+@import "print.scss";

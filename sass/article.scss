@@ -1,0 +1,11 @@
+.content article {
+    /* I promise to only use <pre> for code */
+    pre {
+        padding: 1em;
+    }
+
+    /* inline code via `backticks` */
+    p > code {
+        background-color: aquamarine;
+    }
+}

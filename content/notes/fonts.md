@@ -1,5 +1,6 @@
 +++
-title = "Font Technology"
+title = "Fonts"
+description = "file formats, conversion, and deployment"
 +++
 
 ## Glossary
