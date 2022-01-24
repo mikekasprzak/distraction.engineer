@@ -16,3 +16,14 @@
     --code-background: #DDD;
 }
 
+@media (prefers-color-scheme: dark) {
+    :root {
+        --page-color: #CCC;
+        --page-light-color: #999;
+        --page-dark-color: #EEE;
+        --page-background: #333;
+
+        --code-color: #AAA;
+        --code-background: #444;
+    }
+}

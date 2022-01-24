@@ -7,8 +7,13 @@
         font-size: 11pt;
     }
 
-    body > header {
+    body > header.nav {
         margin: auto;
+        display: flex;
+
+        > * {
+            width: initial;
+        }
     }
 
     main article {
@@ -16,13 +21,13 @@
             font-size: 2.0rem;
         }
         h2 {
-            font-size: 1.5rem;
+            font-size: 1.65rem;
         }
         h3 {
-            font-size: 1.25rem;
+            font-size: 1.35rem;
         }
         h4, h5, h6 {
-            font-size: 1.125rem;
+            font-size: 1.25rem;
         }
 
         p {
