@@ -1,0 +1,32 @@
+@media only screen and (max-width: calc(960px * 1.05)) {
+    :root {
+        --width: 95%;
+    }
+
+    html {
+        font-size: 11pt;
+    }
+
+    body > header {
+        margin: auto;
+    }
+
+    main article {
+        h1 {
+            font-size: 2.0rem;
+        }
+        h2 {
+            font-size: 1.5rem;
+        }
+        h3 {
+            font-size: 1.25rem;
+        }
+        h4, h5, h6 {
+            font-size: 1.125rem;
+        }
+
+        p {
+            text-align: justify;
+        }
+    }
+}
