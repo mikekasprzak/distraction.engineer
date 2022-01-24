@@ -10,6 +10,7 @@ code {
 }
 body {
     margin: 0;
+    background: var(--page-background);
 }
 
 /* Common helpers */
@@ -27,7 +28,7 @@ body {
 body {
     /* All children of the body, default to a fixed width */
     > * {
-        width: 1280px;
+        width: var(--width);
         margin: auto;
     }
 }

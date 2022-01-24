@@ -5,30 +5,30 @@
 {% block content %}
 <article class="h-entry">
   <header>
-    <h3 class="print logo">{{config.title}}</h3>
+    <h4 class="print logo">{{config.title}}</h4>
     {% if page.ancestors.1 %}
     {% set section = get_section(path=page.ancestors.1) %}
       {% if section.extra.show_title_on_pages %}
         {% if page.ancestors.2 %}
         {% set subsection = get_section(path=page.ancestors.2) %}
-        <h1 class="logo">{{section.extra.subtitle}}: {{subsection.title}}</h1>
+        <h2 class="logo">{{section.extra.subtitle}}: {{subsection.title}}</h3>
         {% else %}
-        <h1 class="logo">{{section.title}}</h1>
+        <h2 class="logo">{{section.title}}</h3>
         {% endif %}
       {% endif %}
     {% endif %}
+    <h1 class="p-name title">{{page.title}}</h1>
+    <sub class="subtitle">
+      {% if page.date %}<span>Published <time class="dt-published" datetime='{{page.date | date(format="%+")}}'>{{page.date | date(format="%A %B %e, %Y")}}</time></span>{% endif %}
+      {% if page.updated %}<span>Last Updated <time class="dt-updated" datetime='{{page.updated | date(format="%+")}}'>{{page.updated | date(format="%A %B %e, %Y")}}</time></span>{% endif %}
+    </sub>
+    <a href="/" rel="author"><span class="p-author h-card hidden"><img class="u-logo u-photo" src="{{config.extra.avatar}}">{{config.extra.author}}</span></a>
+    <a class="u-url hidden" href="{{page.path | safe}}">Permalink</a>
+    {% if page.summary %}<div class="p-summary hidden">{{page.summary | safe}}</div>{% endif %}
   </header>
-  <h1 class="p-name title">{{page.title}}</h1>
-  <a href="/" rel="author"><span class="p-author h-card hidden"><img class="u-logo u-photo" src="{{config.extra.avatar}}">{{config.extra.author}}</span></a>
-  <a class="u-url hidden" href="{{page.path | safe}}">Permalink</a>
-  <sub class="subtitle">
-    {% if page.date %}<span>Published <time class="dt-published" datetime='{{page.date | date(format="%+")}}'>{{page.date | date(format="%A %B %e, %Y")}}</time></span>{% endif %}
-    {% if page.updated %}<span>Last Updated <time class="dt-updated" datetime='{{page.updated | date(format="%+")}}'>{{page.updated | date(format="%A %B %e, %Y")}}</time></span>{% endif %}
-  </sub>
-  {% if page.summary %}<div class="p-summary hidden">{{page.summary | safe}}</div>{% endif %}
-  <div class="e-content">{{page.content | safe}}</div>
+  <section class="e-content">{{page.content | safe}}</section>
+  <footer></footer>
 </article>
 
-{#
-<pre>{{__tera_context | escape | safe}}</pre>#}
+{#<pre>{{__tera_context | escape | safe}}</pre>#}
 {% endblock content %}

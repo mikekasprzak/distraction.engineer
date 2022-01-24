@@ -1,7 +1,8 @@
 /* Page Margins */
 @media print {
     /* Remove web specific elements */
-    header, footer, aside, form {
+    body > header, 
+    body > footer {
         display: none;
     }
     /* Print-only elements */

@@ -1,20 +1,25 @@
 /* Top level */
 body {
     > header.nav {
-        /*display: flex;
-        align-items: center;
-        justify-content: left;*/
-        height: 3em;
+        background: var(--header-background);
+        width: 100%;
 
         a {
-            color: black;
+            color: var(--header-color);
             text-decoration: none;
+            padding: 1.5rem 0;
+            display: inline-block;
+
+            &:hover {
+                color: var(--lit-color);
+            }
         }
         .logo {
             font-size: large;
         }
 
         > * {
+            width: var(--width);
             margin: auto;
         }
     }
