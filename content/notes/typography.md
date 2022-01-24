@@ -50,3 +50,7 @@ xdpyinfo | grep -B 2 resolution
 ```
 
 ## Typesetting
+
+{{soundcloud(id="216085245")}}
+
+{{youtube(id="o1JtEJbu5a8")}}

@@ -84,3 +84,18 @@
     font-weight: 400;
     font-style: normal;
 }
+
+
+/* Source Code Pro - Source Code Font */
+@font-face {
+    font-family: 'source code';
+    src: url('/fonts/source-code/VAR/SourceCodeVariable-Roman.ttf.woff2') format('woff2-variations');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'source code';
+    src: url('/fonts/source-code/VAR/SourceCodeVariable-Italic.ttf.woff2') format('woff2-variations');
+    font-weight: 400;
+    font-style: italic;
+}
