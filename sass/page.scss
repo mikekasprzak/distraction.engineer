@@ -26,6 +26,10 @@ main {
     li::marker {
         color: var(--page-light-color);
     }
+    /* temporary until the homepage doesn't need this */
+    li.draft {
+        color: var(--page-light-color);
+    }
 }
 
 /* Common helpers */

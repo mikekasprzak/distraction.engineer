@@ -9,9 +9,9 @@ main article {
     }
 
     /* inline code via `backticks` */
-    p > code {
-        color: var(--code-color);
-        background: var(--code-background);
+    :is(p,ul,h1,h2,h3,h4,h5,h6) code {
+        color: var(--inline-code-color);
+        background: var(--inline-code-background);
         padding: 0.2rem;
         border-radius: 0.2rem;
     }

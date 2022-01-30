@@ -12,7 +12,7 @@ description = "file formats, conversion, and deployment"
 * [ClearType](https://en.wikipedia.org/wiki/ClearType) - From Microsoft, Subpixel rendering of fonts. Patents expired in 2019.
 * [FreeType](https://en.wikipedia.org/wiki/FreeType) - Open Source implementation of TTF and OTF typography. Was crippled by patents (Font Hinting, ClearType) until 2019.
 * Font Variations - 2016 collaboration between Microsoft, Adobe, Apple, and Google, based on Adobe's work. Fonts Variations allow you to make a single font that blends between different weights. Browsers can use any weight from 1-999.
-* Color Fonts - Doesn't seem very standardized, but each of the four (Microsoft, Adobe, Apple, Google) decided on how they'd support colors in fonts.
+* Color Fonts - _`Doesn't seem`_ very standardized, but each of the four (Microsoft, Adobe, Apple, Google) decided on how they'd support colors in fonts.
 * [Compact Font Format, Type 2](https://en.wikipedia.org/wiki/PostScript_fonts#Compact_Font_Format) (CFF2) - Adobe Postscript data format, supported since OpenType 1.8. Outline data is either encoded in "TrueType style" (TTF) or "Postscript style" (CFF2).
 * [Web Open Font Format](https://en.wikipedia.org/wiki/Web_Open_Font_Format) (WOFF) - Compressed font formats. WOFF uses zlib, WOFF2 uses Brotli.
 

@@ -12,8 +12,8 @@
     --lit-color: #F11;
     --link-color: #06C;
 
-    --code-color: #555;
-    --code-background: #DDD;
+    --inline-code-color: #555;
+    --inline-code-background: #DDD;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,7 +23,7 @@
         --page-dark-color: #EEE;
         --page-background: #333;
 
-        --code-color: #AAA;
-        --code-background: #444;
+        --inline-code-color: #AAA;
+        --inline-code-background: #444;
     }
 }

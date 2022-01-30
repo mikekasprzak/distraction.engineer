@@ -10,9 +10,9 @@
 
 
 {% block content %}
-<p>Welcome to Mike's brand new ugly website. I'll make it pretty later.</p>
+<p>Welcome to Mike's brand new website. I'll make it pretty later.</p>
 
-<h2>Blog and Projects Log</h2>
+<h2>Blog, Articles, and Project Log</h2>
 {% set_global projects_feed = [] %}
 {% set_global projects_sections = [] %}
 
@@ -37,6 +37,10 @@
     {% for page in feed | reverse %}
         {% set prefix = "" %}
         {% set suffix = "" %}
+        {% set class = "" %}
+        {% if page.draft %}
+            {% set class = class ~ "draft " %}
+        {% endif %}
         {% if page.components.0 == "projects" %}
             {% set parent = page.ancestors | last %}
             {% set page_section = get_section(path=parent) %}
@@ -49,7 +53,7 @@
                 {% set suffix = "[Article]" %}
             {% endif %}
         {% endif %}
-        <li>{{page.date}} - {{prefix}} <a href="{{page.permalink | safe}}">{{page.title}}</a> {{suffix}}</li>
+        <li class="{{class}}">{{page.date}} - {{prefix}} <a href="{{page.permalink | safe}}">{{page.title}}</a> {{suffix}}</li>
     {% else %}
         No posts.
     {% endfor %}
@@ -57,7 +61,7 @@
 
 {% set notes = get_section(path="notes/_index.md") %}
 {% if notes %}
-<h2>Notes feed</h2>
+<h2>Notebook (unedited)</h2>
 <ul>
     {% for page in notes.pages %}
         <li><a href="{{page.permalink | safe}}">{{page.title}}</a></li>
@@ -67,7 +71,9 @@
 </ul>
 {% endif %}
 
-{#<h2>Creative Works feed</h2>#}
+<h2>Works</h2>
+
+<p>Nothing yet.</p>
 
 <h2>Off site</h2>
 <p>
