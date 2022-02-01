@@ -18,6 +18,8 @@ Zola uses the pulldown-cmark procesor: <https://github.com/raphlinus/pulldown-cm
 * HTML entities are suported.
   * `&copy;` for &copy; and `&trade;` for &trade;
   * `&star;`, `&starf;`, `&heart;`: &star; &starf; &heart;
+  * `&dagger;` for &dagger;, `&Dagger;` for &Dagger;, `&loz;` for &loz;
+    * More here <https://sites.psu.edu/symbolcodes/codehtml/#punc>
   * Em and En dashes are `&mdash;` and `&ndash;` respectfully. 
     * Use hyphens for words. pre-game, jack-o-lantern.
     * Use En dash for ranges (April 1st&ndash;4th), intersections (Oxford&ndash;Wonderland), and compound two word adjectives (post&ndash;Cold War)
