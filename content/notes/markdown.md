@@ -1,7 +1,8 @@
 +++
+title = "Markdown"
 +++
 
-CommonMark, not Markdown: <https://spec.commonmark.org/0.30/>
+Prefer CommonMark to Markdown: <https://spec.commonmark.org/0.30/>
 
 Zola uses the pulldown-cmark procesor: <https://github.com/raphlinus/pulldown-cmark>
 
