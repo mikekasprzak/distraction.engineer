@@ -18,7 +18,7 @@ Zola uses the pulldown-cmark procesor: <https://github.com/raphlinus/pulldown-cm
 * You can escape symbols with a `\` to disable processing. Example: `\* not a bullet`
 * HTML entities are suported.
   * `&copy;` for &copy; and `&trade;` for &trade;
-  * `&star;`, `&starf;`, `&heart;`: &star; &starf; &heart;
+  * `&star;`, `&starf;`, `&hearts;`: &star; &starf; &hearts;
   * `&dagger;` for &dagger;, `&Dagger;` for &Dagger;, `&loz;` for &loz;
     * More here <https://sites.psu.edu/symbolcodes/codehtml/#punc>
   * Em and En dashes are `&mdash;` and `&ndash;` respectfully. 
