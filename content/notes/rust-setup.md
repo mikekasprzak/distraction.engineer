@@ -1,5 +1,6 @@
 +++
 title = "Rust: Setup"
+draft = true
 +++
 ## Rust Setup on Ubuntu
 

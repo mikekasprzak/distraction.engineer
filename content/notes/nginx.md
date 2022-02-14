@@ -1,5 +1,6 @@
 +++
 title = "NginX"
+draft = true
 +++
 
 * Tuning NginX: <https://github.com/denji/nginx-tuning>
