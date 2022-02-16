@@ -100,3 +100,7 @@ I am not exploring this.
 ### Akamai
 Still researching.
 
+
+## Unsorted
+
+* <https://medium.com/@kentaguilar/simplest-way-to-upload-a-file-to-aws-s3-via-php-e83a9f54ba77>

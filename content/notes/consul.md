@@ -35,3 +35,6 @@ And any templates that make reference to that value will get regenerated.
 It's my understand that vaults lock, meaning any vault changes would only be legal while the vault is unlocked. Mixing and matching Consul and Vault data might be a problem... but I don't exactly know how vault is implemented yet.
 
 
+## Unsorted
+* <https://www.consul.io/docs/install/ports>
+* <https://learn.hashicorp.com/consul>
