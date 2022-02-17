@@ -20,10 +20,15 @@ In 2015 Docker and co established the [Open Container Initiative](https://openco
 
 Both specs are based on the work done by Docker. I've seen "OSI containers" and "Docker support" mentioned a lot in my digging, and I suspect this is why.
 
-### The Moby Project
-[Moby](https://github.com/moby/moby) is an open source fork (?) of Docker's efforts, by Docker. I'm not super clear why this exists, but my guess is that Docker's corporate focus has shifted to enterprise clients, and this is meant to be more welcoming to non-Docker collaborators.
 
-EDIT: Looks like Docker was acquired by Mirantis, a company that seems to have bet the farm on Kubernetes (and won). They have since renamed the Docker enterprise products to Mirantis.
+### The Moby Project
+[Moby](https://github.com/moby/moby) is the Docker upstream project. It's where all active development happens. It exists to help eliminate confusion with all of the Docker brand products. If you're someone that wants to contribute to Docker, you contribute to the Moby project instead.
+
+Docker Engine (AKA Docker CE) is the standard free Docker downstream product. It is based on Moby.
+
+Mirantis (formerly Docker Enterprise) is named after the company that acquired Docker. This is also a Moby downstream product.
+
+The rationale seems to be "projects" vs "products", development happens in a project, but you _use_ a product. You can also pay to get support for a product. Anyone can create products based on Moby, kinda like how Percona has their own database product based on MySQL and MariaDB.
 
 
 ## Elements of the Container Ecosystem
@@ -88,10 +93,33 @@ Orchestration manages multiple machines running Container Runtimes.
 
 
 ## What to use
-My best guesses:
+After so much confusion, I think I've finally settled on the following.
 
-* Docker CE for authoring (BuildKit and `containerd` are built-in)
-* 
+* Docker CE for authoring (BuildKit is built-in)
+* Docker CE for deployments (`containerd` is used under the hood)
+* An orchestrator: I'm leaning towards Nomad myself, but Kubernetes seems a perfectly reasonable choice
+  * Nomad documentations suggests Docker by default (i.e. `containerd` wrapped by docker)
+    * Roblox provides an optional direct `containerd` plugin
+  * Kubernetes doesn't depend on Docker anymore and uses `containerd` directly
+
+The documentation I've read suggests BuildKit needs to be specifically enabled. It's been suggested that BuildKit exposes the security changes that don't require containers be run with root privileges, but this might not be accurate anymore.
+
+Moby is the upstream product, not exactly like Chrome or Firefox "Nightly", but it's not a supported or "guaranteed stable" product. Docker CE isn't an LTS product either, but it seems the most stable, widely used choice.
+
+Much of my confusion came from Podman and the debate about Docker running as a daemon. Hearing that the key criticisms that lead to Podman may not be a problem anymore, it makes me more comfortable considering the "industry standard". I should still deep-dive and figure out _how_ to ensure containers aren't unnecessarily running with elevated permissions though.
+
+
+## Docker
+### On Windows
+Docker Desktop is a paid application for Windows and Mac.
+
+Alternatively, Docker CE can be run freely on WSL2 (the Windows Subsystem for Linux v2).
+
+<https://dev.to/felipecrs/simply-run-docker-on-wsl2-3o8>
+
+IMPORTANT: Docker does not start automatically when Windows starts. It will not start until the service is started. As mentioned in the link above, you can utilize startup scripts or your Windows 11 WSL configuration file to auto-start the service. You still have to open a WSL window, but chances are you need one to do your work anyway.
+
+
 
 
 ## TODO and more references
