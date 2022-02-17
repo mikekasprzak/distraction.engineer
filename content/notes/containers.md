@@ -109,7 +109,7 @@ Moby is the upstream product, not exactly like Chrome or Firefox "Nightly", but 
 Much of my confusion came from Podman and the debate about Docker running as a daemon. Hearing that the key criticisms that lead to Podman may not be a problem anymore, it makes me more comfortable considering the "industry standard". I should still deep-dive and figure out _how_ to ensure containers aren't unnecessarily running with elevated permissions though.
 
 
-## Docker
+## Docker Setup
 ### On Windows
 Docker Desktop is a paid application for Windows and Mac.
 
@@ -119,6 +119,47 @@ Alternatively, Docker CE can be run freely on WSL2 (the Windows Subsystem for Li
 
 IMPORTANT: Docker does not start automatically when Windows starts. It will not start until the service is started. As mentioned in the link above, you can utilize startup scripts or your Windows 11 WSL configuration file to auto-start the service. You still have to open a WSL window, but chances are you need one to do your work anyway.
 
+## Docker Security
+
+### Linux Users
+Users on Linux have a user id or `uid`. The `root` user is always `0`, and any process run by `root` is considered a privileged process. Unprivileged Processes are run by users, and a user may require special permissions or "capabilities" to make certain system calls. Privileges are given to users or groups.
+
+ <https://medium.com/devops-dudes/docker-under-the-hood-user-space-kernel-syscalls-permissions-setuid-setgid-and-capabilities-3a5c58584b4f>
+
+`setuid` is a curious feature of Linux file systems. It replaces the `x` in file permissions with an `s`. What it does is it makes executables run as the owner of the file, rather then the current user.
+
+```bash
+chmod +s my-executable
+```
+
+This is used by `ping` because it requires additional permissions to perform network operations.
+
+`setgid` is similar, but it applies to the group instead of the user. This used by `crontab`.
+
+The article above provides an example that fiddles with the ping command. I've summarized it below.
+
+```bash
+ping "google.com"
+
+getcap /bin/ping
+# output: /bin/ping cap_net_raw=ep
+
+cp /bin/ping ./my-ping
+
+# not supposed to work, but it does (is it because I'm a sudoer?)
+./my-ping "google.com"
+
+# will work
+sudo ./my-ping "google.com"
+
+getcap ./my-ping
+# output:
+
+sudo setcap "cap_net_raw+p" ./my-ping
+
+getcap ./my-ping
+# output: my-ping cap_net_raw=p
+```
 
 
 
