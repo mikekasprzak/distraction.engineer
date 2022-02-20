@@ -120,9 +120,21 @@ Alternatively, Docker CE can be run freely on WSL2 (the Windows Subsystem for Li
 IMPORTANT: Docker does not start automatically when Windows starts. It will not start until the service is started. As mentioned in the link above, you can utilize startup scripts or your Windows 11 WSL configuration file to auto-start the service. You still have to open a WSL window, but chances are you need one to do your work anyway.
 
 ## Docker Security
+Docker containers effectively have full access to the machine they run on, but through the use of Linux Namespaces they can be restricted.
+
+* <https://www.linux.com/news/understanding-and-securing-linux-namespaces/>
+* <https://docs.docker.com/engine/security/userns-remap/>
 
 ### Linux Users
-Users on Linux have a user id or `uid`. The `root` user is always `0`, and any process run by `root` is considered a privileged process. Unprivileged Processes are run by users, and a user may require special permissions or "capabilities" to make certain system calls. Privileges are given to users or groups.
+Users on Linux have a user id or `uid`. The `root` user is always `0`, and any process run by `root` is considered a privileged process. Unprivileged Processes are run by users, and a user may require special permissions or "capabilities" to make certain system calls. Privileges are given to users and groups, and users can be members of multiple groups.
+
+```bash
+id username
+# output: username's uid, gid, and member groups
+
+id
+# output: current user's uid, gid, and member groups
+```
 
  <https://medium.com/devops-dudes/docker-under-the-hood-user-space-kernel-syscalls-permissions-setuid-setgid-and-capabilities-3a5c58584b4f>
 

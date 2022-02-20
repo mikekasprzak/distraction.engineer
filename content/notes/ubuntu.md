@@ -2,7 +2,8 @@
 title = "Ubuntu and Linux"
 +++
 
-These are general Linux and system notes from the perspective of an Ubuntu user. I run Ubuntu on my servers, and Ubuntu derivatives on my workstations (Pop!_OS).
+These are general Linux and system notes from the perspective of an Ubuntu Server/Pop!_OS user.
+
 
 ## systemd
 At its core, Ubuntu's are `systemd` distros.
@@ -18,3 +19,19 @@ Curiously there's an anti-systemd website, though the concerns raised stem from 
 * <https://www.liquidweb.com/kb/what-is-systemctl-an-in-depth-overview/>
 
 
+## hostnamectl
+```bash
+hostnamectl set-hostname MyComputer
+```
+
+## groups
+```bash
+# Create a group 'newgroup'
+sudo groupadd newgroup
+
+# Add 'user' to 'newgroup'
+sudo usermod -aG newgroup user
+
+# Reload changes for group (otherwise logout and log back in)
+newgrp newgroup
+```
