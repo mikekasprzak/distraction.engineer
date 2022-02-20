@@ -75,3 +75,26 @@ These actually _shouldn't_ be left behind. The last part of the lockfile name is
 <https://www.gnupg.org/faq/whats-new-in-2.1.html#nosecring>
 
 `pubring.gpg` and `secring.gpg` contained the public and secret (private) keys respectfully. It's also worth noting the `secring.gpg` file contained both. That was technically unnecessary, and that has since changed to `pubring.kbx` and the `private-keys-v1.d\` folder.
+
+
+## Advanced hardware key security
+I was hoping to find a way to use a FIDO2 key with GnuPG, but no luck so far. I did find some related information.
+
+### Using FIDO2 (and FIDO U2F) keys with OpenSSH
+
+* <https://www.yubico.com/blog/github-now-supports-ssh-security-keys/>
+* <https://developers.yubico.com/SSH/Securing_SSH_with_FIDO2.html>
+* <https://xosc.org/u2fandssh.html>
+
+### Using Yubikeys with GnuPG, SSH, etc
+It's possible to use a Yubikey with GnuPG (instead of a FIDO2 key), but you do that by generating and storing an SSH key on the device.
+
+* <https://www.stavros.io/posts/u2f-fido2-with-ssh/>
+* <https://github.com/bsodmike/Yubikey-GPG-SSH-FIDO2-MFA-ZeroTrust>
+* <https://www.thepolyglotdeveloper.com/2019/02/use-yubikey-pgp-signing-encryption-authentication/>
+
+#### Securing SSH with PGP
+Slightly different angle, making SSH credentials PGP's problem. Alas this doesn't solve the lack of generic FIDO2 support problem, but it's interesting.
+
+* <https://developers.yubico.com/PIV/Guides/Securing_SSH_with_OpenPGP_or_PIV.html>
+
