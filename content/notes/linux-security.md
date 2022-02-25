@@ -98,3 +98,9 @@ Slightly different angle, making SSH credentials PGP's problem. Alas this doesn'
 
 * <https://developers.yubico.com/PIV/Guides/Securing_SSH_with_OpenPGP_or_PIV.html>
 
+
+
+## Unsorted
+
+* On PGP, noteworthy for clues on what you can store in and with PGP (subkeys?) <https://security.stackexchange.com/questions/29851/how-many-openpgp-keys-should-i-make>
+* Docker uses PASS, a general linux password store. PASS uses PGP to encrypt passwords. Quite interesting! <https://www.passwordstore.org/>

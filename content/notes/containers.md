@@ -109,6 +109,10 @@ Moby is the upstream product, not exactly like Chrome or Firefox "Nightly", but 
 Much of my confusion came from Podman and the debate about Docker running as a daemon. Hearing that the key criticisms that lead to Podman may not be a problem anymore, it makes me more comfortable considering the "industry standard". I should still deep-dive and figure out _how_ to ensure containers aren't unnecessarily running with elevated permissions though.
 
 
+## How containers (actually) work
+{{ youtube(id="8fi7uSYlOdc") }}
+
+
 ## Docker Setup
 ### On Windows
 Docker Desktop is a paid application for Windows and Mac.
@@ -180,3 +184,4 @@ getcap ./my-ping
 * <https://docs.docker.com/develop/develop-images/dockerfile_best-practices/>
 * Investigate Chroot and Jails for comparison (since IMO application containers work kind-of the same way)
 * <https://galeracluster.com/library/documentation/docker.html>
+* docker can use PASS to store credentials, which uses PGP to encrypt them. Super interesting <https://www.passwordstore.org/>
