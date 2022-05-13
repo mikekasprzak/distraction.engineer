@@ -14,6 +14,8 @@ Curiously there's an anti-systemd website, though the concerns raised stem from 
 
 <https://nosystemd.org/>
 
+{{ youtube(id="o_AIw9bGogo") }}
+
 #### Resources
 * <https://www.linode.com/docs/guides/what-is-systemd/>
 * <https://www.liquidweb.com/kb/what-is-systemctl-an-in-depth-overview/>
