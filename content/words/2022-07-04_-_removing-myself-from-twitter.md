@@ -11,10 +11,12 @@ Earlier today I switched my personal Twitter account to private. In the short te
 
 Where are you going? Here and nowhere.
 
-I'm interested in the technology behind Mastodon and other ActivityPub/Fediverse networks. I think Mastodon, Miskey, and others are doing a great job emulating a Twitter-like experience. That said I don't think Twitter-like is enough to change anything. That doesn't mean I have the solution either, but I know personally I'll be looking more this way for my future microblogging or public journaling solution.
+Tangentially I'm interested in the technology behind Mastodon and other ActivityPub/Fediverse networks. I think Mastodon, Miskey, and others are doing a great job with a Twitter-like experience, but that alone isn't enough to change anything. With single servers&mdash;islands&mdash;carrying many tens of thousands of users, the Fediverse isn't so much decentralized as it is semi-centralized.
 
-Unlike Myspace and Tumblr, I don't expect Twitter to ever go too far that it drives away users. I think Twitter will keep chugging along for years as the fire hose of 120-280 character finger vomit. It has value and will continue to create value, but as a person I'm questioning the value I get from it. I do get value, but lately I've been feeling like it hurts more than it helps.
+I think this is still a strong foundation: We have standards. We have lots of non-standards too thanks to the most popular clients, but there are still enough bones for interoperability. There's way more to explore to make single user or small-team experience better. Mobile light clients tied to standards, not specific servers. I'm excited about the potetial of future microblogging and public journaling.
 
-So, gradually, I will begin stepping away.
+I also don't expect Twitter to ever go too far that it drives away users (Elon is trying his best). I think Twitter will keep chugging along for years as the fire hose of 120-280 character finger vomit. It has value and will continue to create value, but as a person I'm questioning the value I get from it. I do get value, but lately I've been feeling like it hurts more than it helps.
 
-That doesn't mean you wont hear from me&mdash;I still have Ludum Dare's to run&mdash;but for my sake I'd like it to become a smaller part of what I do.
+So, gradually, I will begin stepping away as I get absorbed by the new.
+
+That doesn't mean you wont hear from me&mdash;I still have Ludum Dare's to run&mdash;but for my sake I'd like Twitter itself to become a much smaller part of what I do.
