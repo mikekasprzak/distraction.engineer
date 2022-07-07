@@ -2,21 +2,17 @@
 title = "Beginning to remove myself from Twitter"
 #date = 2022-07-04
 [taxonomies]
-tags = ["self","social-media", "adhd", "blogging"]
+tags = ["self", "social-media", "adhd", "blogging", "micro-blogging"]
 +++
 
-For professional reasons I can't quit Twitter, but that doesn't mean I have to like it.
+For professional reasons I can't quit Twitter, but it's unhealthy for me to keep using it.
 
-Earlier today I switched my personal Twitter account to private. In the short term that means I've opted out of the public discourse, though I still have around 12k followers to hear my words&mdash;It's also debatable how much reach I actually have with that. I don't intend to delete the account, and when Ludum Dare comes around I will make it public again, but moving forward I would like to use it only as a utility. I will exist elsewhere.
+Out of frustration I recently switched my personal Twitter account to private. In the short term that means I've opted out of algorithmic public discourse, though nearly 12k followers still have access to my words.
 
-Where are you going? Here and nowhere.
+Since making the the switch, I've caught myself numerous times scrolling, getting triggered and sucked into multiple conversations I couldn't meaningfully impact. It's not that nobody will see me, but it's only a subset of a subset of the 12k that follow me and who I'm replying to. Something I share might do well if I started the conversation, but I have little credibility to add outside my niche&mdash;These days that's "Game Jams", despite my 20+ years programming, creating, and shipping games.
 
-Tangentially I'm interested in the technology behind Mastodon and other ActivityPub/Fediverse networks. I think Mastodon, Miskey, and others are doing a great job with a Twitter-like experience, but that alone isn't enough to change anything. With single servers&mdash;islands&mdash;carrying many tens of thousands of users, the Fediverse isn't so much decentralized as it is semi-centralized.
+It's hard to resist seeking gratification from the Twitter echo chamber. My recently adopted pseudonym&mdash;the distraction engineer&mdash;isn't just a cheeky play on games and entertainment as distractions, but also a subtle reflection of my own struggle. It has taken me 4 decades to begin accepting my ADHD as something I don't need to be embarrassed about, but I'm actually proud to be in the business of distraction. Not all distractions are bad, but this one is for me.
 
-I think this is still a strong foundation: We have standards. We have lots of non-standards too thanks to the most popular clients, but there are still enough bones for interoperability. There's way more to explore to make single user or small-team experience better. Mobile light clients tied to standards, not specific servers. I'm excited about the potetial of future microblogging and public journaling.
+After 15 years on the platform, I am no longer convinced "Twitter in moderation" is something I can realistically do. Twitter is a trap for the ADHD brain. For my mental health, I will be cutting back my socializing on the platform.
 
-I also don't expect Twitter to ever go too far that it drives away users (Elon is trying his best). I think Twitter will keep chugging along for years as the fire hose of 120-280 character finger vomit. It has value and will continue to create value, but as a person I'm questioning the value I get from it. I do get value, but lately I've been feeling like it hurts more than it helps.
-
-So, gradually, I will begin stepping away as I get absorbed by the new.
-
-That doesn't mean you wont hear from me&mdash;I still have Ludum Dare's to run&mdash;but for my sake I'd like Twitter itself to become a much smaller part of what I do.
+I'm not done with micro-blogging, but in time I would like my Twitter to be a "feed of me" instead of "my feed".
