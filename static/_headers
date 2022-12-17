@@ -1,2 +1,2 @@
-/webfinger
+/.well-known/webfinger
     Content-Type: application/json
