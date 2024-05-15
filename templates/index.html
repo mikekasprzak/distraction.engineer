@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% import "_indieweb.html" as indieweb %}
+
+
+{% block header %}
+<header class="hero">
+    <h1 class="logo">The Distraction<wbr>.Engineer</h1>
+</header>
+{% endblock %}
+
+
+{% block content %}
+<p>Hi, I'm Mike, and I make distractions. </p>
+
+<h2>Written Words</h2>
+{% set_global projects_feed = [] %}
+{% set_global projects_sections = [] %}
+
+{# Grab all the projects and merge them into a single feed #}
+
+{% set notes = get_section(path="notes/_index.md") %}
+{% if notes %}
+<h2>Notebook (unedited)</h2>
+<ul>
+    {% for page in notes.pages %}
+        <li><a href="{{page.permalink | safe}}">{{page.title}}</a></li>
+    {% else %}
+        No notes.
+    {% endfor %}
+</ul>
+{% endif %}
+
+<h2>Works</h2>
+
+<p>Nothing yet.</p>
+
+<h2>Off site</h2>
+<p>
+    <a href="https://twitter.com/mikekasprzak" rel="me">Twitter</a>, 
+    <a href="https://youtube.com/mikekasprzak" rel="me">YouTube</a>, 
+    <a href="https://github.com/mikekasprzak" rel="me">GitHub</a>, 
+    <a href="https://ldjam.com/users/pov" rel="me">Ludum Dare</a>,
+    <a href="https://jammer.bio/pov" rel="me">Jammer.bio</a>,
+    <a href="https://gamedev.bio/mikekasprzak" rel="me">gamedev.bio</a>,
+    <a href="https://toonormal.com">Old Blog</a>
+</p>
+
+{{indieweb::hcard()}}
+{#<pre>{{__tera_context | escape | safe}}</pre>#}
+{% endblock content %}

@@ -1,0 +1,19 @@
+base_url = "https://distraction.engineer"
+title = "The Distraction.Engineer"
+description = "The words and works of Mike Kasprzak"
+
+compile_sass = true
+build_search_index = true
+
+ignored_content = ["README.markdown"]
+
+taxonomies = [
+    {name="tags", feed=true}
+]
+
+[markdown]
+highlight_code = true
+
+[extra]
+author = "Mike Kasprzak"
+avatar = "/me/Chicken128B-B.png"

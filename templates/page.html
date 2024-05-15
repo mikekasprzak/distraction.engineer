@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %}{{page.title}} | {{super()}}{% endblock title %}
+
+{% block content %}
+<article class="h-entry">
+  <header>
+    <h4 class="print logo">{{config.title}}</h4>
+    {% if page.ancestors.1 %}
+    {% set section = get_section(path=page.ancestors.1) %}
+      {% if section.extra.show_title_on_pages %}
+        {% if page.ancestors.2 %}
+        {% set subsection = get_section(path=page.ancestors.2) %}
+        <h2 class="logo"><a href="..">{{section.extra.subtitle}}: {{subsection.title}}</a></h3>
+        {% else %}
+        <h2 class="logo"><a href="..">{{section.title}}</a></h3>
+        {% endif %}
+      {% endif %}
+    {% endif %}
+    <h1 class="p-name title">{{page.title}}</h1>
+    <div class="subtitle">
+      {% if page.date %}<span>Published <time class="dt-published" datetime='{{page.date | date(format="%+")}}'>{{page.date | date(format="%A %B %e, %Y")}}</time></span>{% endif %}
+      {% if page.updated %}<span>Last Updated <time class="dt-updated" datetime='{{page.updated | date(format="%+")}}'>{{page.updated | date(format="%A %B %e, %Y")}}</time></span>{% endif %}
+    </div>
+    <a href="/" rel="author"><span class="p-author h-card hidden"><img class="u-logo u-photo" src="{{config.extra.avatar}}">{{config.extra.author}}</span></a>
+    <a class="u-url hidden" href="{{page.path | safe}}">Permalink</a>
+    {% if page.summary %}<div class="p-summary hidden">{{page.summary | safe}}</div>{% endif %}
+  </header>
+  <section class="e-content">{{page.content | safe}}</section>
+  <footer>.</footer>
+</article>
+
+{#<pre>{{__tera_context | escape | safe}}</pre>#}
+{% endblock content %}

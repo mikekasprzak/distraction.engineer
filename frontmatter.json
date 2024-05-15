@@ -1,0 +1,131 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "article",
+      "pageBundle": false,
+      "previewPath": null,
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "Published date",
+          "name": "date",
+          "type": "datetime",
+          "default": "{{now}}",
+          "isPublishDate": true
+        },
+        {
+          "title": "Modified date",
+          "name": "date",
+          "type": "datetime",
+          "isModifiedDate": true
+        },
+        {
+          "title": "Preview",
+          "name": "preview",
+          "type": "image"
+        },
+        {
+          "title": "Draft?",
+          "name": "draft",
+          "type": "draft",
+          "default": false
+        },
+        {
+          "title": "Taxonomies",
+          "name": "taxonomies",
+          "type": "fields",
+          "fields": [
+            {
+              "title": "Tags",
+              "name": "tags",
+              "type": "tags"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "recipe",
+      "pageBundle": true,
+      "previewPath": null,
+      "fields": [
+        {
+          "title": "Recipe Title",
+          "name": "title",
+          "type": "string",
+          "required": true,
+          "single": true
+        },
+        {
+          "title": "Recipe Slug",
+          "name": "slug",
+          "type": "slug",
+          "default": "{{slug}}"
+        },
+        {
+          "title": "Published date",
+          "name": "date",
+          "type": "datetime",
+          "default": "{{now}}",
+          "isPublishDate": true
+        },
+        {
+          "title": "Modified date",
+          "name": "date",
+          "type": "datetime",
+          "isModifiedDate": true
+        },
+        {
+          "title": "Draft?",
+          "name": "draft",
+          "type": "draft",
+          "default": false
+        },
+        {
+          "title": "Taxonomies",
+          "name": "taxonomies",
+          "type": "fields",
+          "fields": [
+            {
+              "title": "Tags",
+              "name": "tags",
+              "type": "tags"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "frontMatter.framework.id": "zola",
+  "frontMatter.content.publicFolder": "static",
+  "frontMatter.preview.host": "http://localhost:1111",
+  "frontMatter.preview.pathName": "{{pathToken.2}}",
+  "frontMatter.content.pageFolders": [
+    {
+      "path": "[[workspace]]/content/words",
+      "title": "Article",
+      "contentTypes": [
+        "article"
+      ]
+    },
+    {
+      "title": "Recipes",
+      "path": "[[workspace]]/content/recipes",
+      "contentTypes": [
+        "recipe"
+      ]
+    },
+    {
+      "title": "Works",
+      "path": "[[workspace]]/content/works",
+      "contentTypes": [
+        "work"
+      ]
+    }
+  ]
+}
