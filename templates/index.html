@@ -14,25 +14,38 @@
 
 {% set words = get_section(path="words/_index.md") %}
 {% if words %}
+{% set_global words_pages = words.pages %}
+{% for subsection in words.subsections %}
+    {% set section = get_section(path=subsection) %}
+    {% set_global words_pages = words_pages | concat(with=section.pages) %}
+{% endfor %}
 <h2>Recent words</h2>
-<p>Notes, articles, logs, and blogs</p>
+{{words.content | safe}}
+{% for year, posts in words_pages | group_by(attribute="year") %}
+<h3>{{year}}</h3>
 <ul>
-    {% for page in words.pages %}
+    {% for page in posts %}
         <li><a href="{{page.permalink | safe}}">{{page.title}}</a></li>
     {% else %}
         <li>No words</li>
     {% endfor %}
 </ul>
+{% endfor %}
 <p><a href="/words">More words</a></p>
 {% endif %}
 
-
+{#
 {% set works = get_section(path="works/_index.md") %}
 {% if works %}
+{% set_global works_pages = works.pages %}
+{% for subsection in works.subsections %}
+    {% set section = get_section(path=subsection) %}
+    {% set_global works_pages = works_pages | concat(with=section.pages) %}
+{% endfor %}
 <h2>Recent works</h2>
-<p>Showing off</p>
+{{works.content | safe}}
 <ul>
-    {% for page in works.pages %}
+    {% for page in works_pages %}
         <li><a href="{{page.permalink | safe}}">{{page.title}}</a></li>
     {% else %}
         <li>No works</li>
@@ -40,12 +53,13 @@
 </ul>
 <p><a href="/works">More works</a></p>
 {% endif %}
+#}
 
 
 {% set recipes = get_section(path="recipes/_index.md") %}
 {% if recipes %}
 <h2>Recipes</h2>
-<p>Everyday chemistry</p>
+{{recipes.content | safe}}
 <ul>
     {% for page in recipes.pages %}
         <li><a href="{{page.permalink | safe}}">{{page.title}}</a></li>
