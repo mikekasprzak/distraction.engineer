@@ -3,7 +3,7 @@ title = "Eggy Gluten-free Crepes"
 date = "2024-05-20T17:52:08.900Z"
 
 [taxonomies]
-tags = [ "egg", "gluten-free", "vegetarian", "wrap", "dairy-free" ]
+tags = [ "egg", "wrap", "gluten-free", "dairy-free", "vegetarian" ]
 +++
 These crepes are savory and delicious despite being gluten and dairy free. While you could substitute wheat flour and dairy milk, I really like how the mildness of the rice flour doesn't interfere with the taste of the the egg.
 
