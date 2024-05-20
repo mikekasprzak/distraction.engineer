@@ -20,7 +20,7 @@
         },
         {
           "title": "Modified date",
-          "name": "date",
+          "name": "updated",
           "type": "datetime",
           "isModifiedDate": true
         },
@@ -28,51 +28,6 @@
           "title": "Preview",
           "name": "preview",
           "type": "image"
-        },
-        {
-          "title": "Draft?",
-          "name": "draft",
-          "type": "draft",
-          "default": false
-        },
-        {
-          "title": "Taxonomies",
-          "name": "taxonomies",
-          "type": "fields",
-          "fields": [
-            {
-              "title": "Tags",
-              "name": "tags",
-              "type": "tags"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "recipe",
-      "pageBundle": true,
-      "previewPath": null,
-      "fields": [
-        {
-          "title": "Recipe Title",
-          "name": "title",
-          "type": "string",
-          "required": true,
-          "single": true
-        },
-        {
-          "title": "Published date",
-          "name": "date",
-          "type": "datetime",
-          "default": "{{now}}",
-          "isPublishDate": true
-        },
-        {
-          "title": "Modified date",
-          "name": "date",
-          "type": "datetime",
-          "isModifiedDate": true
         },
         {
           "title": "Draft?",
@@ -111,14 +66,14 @@
       "title": "Recipes",
       "path": "[[workspace]]/content/recipes",
       "contentTypes": [
-        "recipe"
+        "article"
       ]
     },
     {
       "title": "Works",
       "path": "[[workspace]]/content/works",
       "contentTypes": [
-        "work"
+        "article"
       ]
     }
   ]
