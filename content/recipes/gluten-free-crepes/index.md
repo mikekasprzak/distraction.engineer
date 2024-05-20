@@ -1,39 +1,47 @@
 +++
-title = "Gluten-free Egg Crepes"
+title = "Eggy Gluten-free Crepes"
 date = "2024-05-20T17:52:08.900Z"
 
 [taxonomies]
 tags = [ "egg", "gluten-free", "vegetarian", "wrap", "dairy-free" ]
 +++
-These crepes are savory and delicious despite being gluten and dairy free. While you could substitute wheat flour and dairy milk, the mildness of the rice flour lets the egg stand out, and the oat milk gives them a creamy nutty flavour.
+These crepes are savory and delicious despite being gluten and dairy free. While you could substitute wheat flour and dairy milk, I really like how the mildness of the rice flour doesn't interfere with the taste of the the egg.
 
 ## Tools
-* 8" non-stick frying pan (NO LARGER! This pairs with the measuring)
-* 1/4 cup measuring cup (for pouring batter into pan)
+* 8" non-stick frying pan (NO LARGER! This pairs with the measuring cup)
+* 1/4 cup `(~75 ml)` measuring cup (for pouring batter into pan)
 * silicone spatula (for flipping)
 * stove-top
 * mixing bowl
-* whisk [(or fork)]
+* whisk `(or fork)`
 
-## Ingredients: batter
+## Ingredients: Crepe batter
+This recipe is almost a 2:1 ratio of wet to dry ingredients. Makes 6-7 crepes.
+
 ### Wet
-* 2 large eggs
-* 200 ml `(6 oz)` oat milk (best with fatty/creamy milk)
-* 2 tablespoon flavorful oil (peanut, olive, cocoanut)
-* 1 tablespoon `(or glug)` of vanilla (real or fake)
+* 2 large **eggs** `(~75 ml)`, shells removed
+* 3/4 cups `(~200 ml)` **oat milk** (best with fatty/creamy milk)
+* 2 tablespoon `(~35 ml)` **flavorful oil** (peanut, olive, cocoanut)
+* 1 tablespoon `(~18 ml or glug)` **vanilla** (real or fake)
+
+~330 ml total
 
 ### Dry
-* 1 tablespoon sugar
+* 1 tablespoon `(18 ml)` **sugar**
   * alternatively, [this recipe](https://www.theflavorbender.com/classic-french-crepes/) recommends 3 tablespoons if making desert crepes
-* 1 teaspoon salt
-* 2/3 cups rice flour
+* 1 teaspoon `(6 ml)` **salt**
+* 2/3 cups `(150 ml)` **rice flour**
   * glutenous rice flour should work too
 
+~175 ml total
+
 ### While cooking
-* margarine (for checking pan temperature and adding a hint of "buttery" flavour)
+* **margarine** (for checking pan temperature and adding a hint of "buttery" flavour)
 
 
 ## Instructions: Crepe batter
+The batter can be prepared in advanced, but should be used within 1-2 days.
+
 1. Combine wet ingredients (eggs, milk, oil, vanilla), whisking until combined
 2. Add salt and sugar, whisking until dissolved
 3. Add flour, whisk until there are no lumps
@@ -46,7 +54,7 @@ These crepes are savory and delicious despite being gluten and dairy free. While
   * Like with cooking eggs, Crepes can cook and set using residual heat of the pan, so don't leave them unattended!
 2. Fill the measuring cup with crepe batter.
   * It's okay if the cup isn't full, but we are going to need about 1/4th a cup of batter to cover the pan
-  * In a pinch, you can use 4 tablespoons instead of 1/4th cup, but the batter will begin setting quickly so you may not get ideal coverage
+  * In a pinch, you can use 4 tablespoons instead of 1/4th cup, but the batter will begin setting quickly so you may not get ideal pan coverage
 3. Grip the pan with one hand, and the measuring cup with the other
 4. Pour the batter from the measuring cup into the center of the pan, lifting and angling the pan to help distribute the batter all across the pan surface. Once covered, lay the plan back on the stove-top burner.
   * The residual heat of the pan will begin setting the crepe, so tilt the pan as quickly as you are comfortable to cover the surface with batter
@@ -70,10 +78,13 @@ That said, to most people Crepes are about the toppings and fillings.
 ### Savory Crepes
 The best crepe I've ever had was a savory crepe from a French deserts place in the market downtown. It's a large super-thin crepe prepared fresh, filled with chicken, bacon, and mushrooms, then topped with a creamy bechamel sauce.
 
-To recreate that, I'd like to try making a bechamel with margarine (or cocoanut oil), glutenous rice flour, and either oat or almond milk. I often add nutmeg to my typical bechamel, so I suspect "going nutty" should yield a nice dairy-free alternative.
+To recreate that, I'd like to try making a bechamel with margarine (or cocoanut oil), glutenous rice flour, and either oat or almond milk. I often add nutmeg to my bechamel, so I suspect "going nutty" should yield a nice dairy-free alternative.
 
 ## Notes to self
+* I love vanilla, but so far I've only eaten these as sweet crepes. I'm not sure how the vanilla affects the savory flavor.
 * See if glutenous rice flour does anything interesting. Internet people say that glutenous rice flour tends to be sticker, with a similar effect to gluten without being gluten. 
 * I avoided it, but many recipes call for added water. I was concerned about watering down the flavours, but admittedly my crepes ended up rather thick (2 mm). I'm not sure if that was because my heat was too high (thus they set fast), or if the batter wasn't thin enough.
-  * Tangentially I'm slightly concerned about my salt to other ingredient ratio. Adding a tiny bit of water would ensure 1 teaspoon isn't too salty.
-* I love vanilla, but so far I've only eaten these as sweet crepes. I'm not sure how the vanilla affects the savory flavor.
+  * Tangentially I'm slightly concerned about my salt to other ingredient ratio. Adding a tiny bit of water would ensure my recommendation of 1 teaspoon (instead of 1/2) isn't too salty.
+  * Oat milk can be a little pricy, so its worth testing how more (250ml) or less (150ml) plus water affects the flavour.
+  * Merely adding 2-3 tablespoons (35ml-55ml) of water brings the ratio of wet to dry ingredients to 2:1
+    * 2 tablespoons if vanilla is used, 3 if it is not
