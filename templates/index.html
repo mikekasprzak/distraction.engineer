@@ -10,29 +10,48 @@
 
 
 {% block content %}
-<p>Hi, I'm Mike, and I make distractions. </p>
+<p></p>
 
-<h2>Written Words</h2>
-{% set_global projects_feed = [] %}
-{% set_global projects_sections = [] %}
-
-{# Grab all the projects and merge them into a single feed #}
-
-{% set notes = get_section(path="notes/_index.md") %}
-{% if notes %}
-<h2>Notebook (unedited)</h2>
+{% set words = get_section(path="words/_index.md") %}
+{% if words %}
+<h2>Words</h2>
+<p>Notes, articles, logs, and blogs</p>
 <ul>
-    {% for page in notes.pages %}
+    {% for page in words.pages %}
         <li><a href="{{page.permalink | safe}}">{{page.title}}</a></li>
     {% else %}
-        No notes.
+        <li>No words</li>
     {% endfor %}
 </ul>
 {% endif %}
 
-<h2>Works</h2>
 
-<p>Nothing yet.</p>
+{% set works = get_section(path="works/_index.md") %}
+{% if works %}
+<h2>Works</h2>
+<p>Showing off</p>
+<ul>
+    {% for page in works.pages %}
+        <li><a href="{{page.permalink | safe}}">{{page.title}}</a></li>
+    {% else %}
+        <li>No works</li>
+    {% endfor %}
+</ul>
+{% endif %}
+
+
+{% set recipes = get_section(path="recipes/_index.md") %}
+{% if recipes %}
+<h2>Recipes</h2>
+<p>Everyday chemistry in your face</p>
+<ul>
+    {% for page in recipes.pages %}
+        <li><a href="{{page.permalink | safe}}">{{page.title}}</a></li>
+    {% else %}
+        <li>No recipes</li>
+    {% endfor %}
+</ul>
+{% endif %}
 
 <h2>Off site</h2>
 <p>
