@@ -10,6 +10,10 @@
 
 
 {% block content %}
+{% set_global MAX_WORDS = 8 %}
+{% set_global MAX_WORKS = 6 %}
+{% set_global MAX_RECIPES = 4 %}
+
 <p>{{config.description}}</p>
 
 {% set words = get_section(path="words/_index.md") %}
@@ -24,14 +28,16 @@
 {% for year, posts in words_pages | group_by(attribute="year") %}
 <h3>{{year}}</h3>
 <ul>
-    {% for page in posts %}
+    {% for page in posts | slice(end=MAX_WORDS) %}
         <li><a href="{{page.permalink | safe}}">{{page.title}}</a></li>
     {% else %}
         <li>No words</li>
     {% endfor %}
 </ul>
 {% endfor %}
+{% if words_pages | length > MAX_WORDS %}
 <p><a href="/words">More words</a></p>
+{% endif %}
 {% endif %}
 
 {#
@@ -45,13 +51,15 @@
 <h2>Recent works</h2>
 {{works.content | safe}}
 <ul>
-    {% for page in works_pages %}
+    {% for page in works_pages | slice(end=MAX_WORKS) %}
         <li><a href="{{page.permalink | safe}}">{{page.title}}</a></li>
     {% else %}
         <li>No works</li>
     {% endfor %}
 </ul>
+{% if works_pages | length > MAX_WORKS %}
 <p><a href="/works">More works</a></p>
+{% endif %}
 {% endif %}
 #}
 
@@ -61,13 +69,15 @@
 <h2>Recipes</h2>
 {{recipes.content | safe}}
 <ul>
-    {% for page in recipes.pages %}
+    {% for page in recipes.pages | slice(end=MAX_RECIPES) %}
         <li><a href="{{page.permalink | safe}}">{{page.title}}</a></li>
     {% else %}
         <li>No recipes</li>
     {% endfor %}
 </ul>
+{% if recipes.pages | length > MAX_RECIPES %}
 <p><a href="/recipes">More recipes</a></p>
+{% endif %}
 {% endif %}
 
 <h2>Elsewhere</h2>

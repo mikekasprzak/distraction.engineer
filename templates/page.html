@@ -5,7 +5,6 @@
 {% block content %}
 <article class="h-entry">
   <header>
-    <h4 class="print logo">{{config.title}}</h4>
     {% if page.ancestors.1 %}
     {% set section = get_section(path=page.ancestors.1) %}
       {% if section.extra.show_title_on_pages %}
@@ -27,7 +26,7 @@
     {% if page.summary %}<div class="p-summary hidden">{{page.summary | safe}}</div>{% endif %}
   </header>
   <section class="e-content">{{page.content | safe}}</section>
-  <footer>.</footer>
+  <footer></footer>
 </article>
 
 {#<pre>{{__tera_context | escape | safe}}</pre>#}
