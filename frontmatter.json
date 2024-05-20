@@ -62,12 +62,6 @@
           "single": true
         },
         {
-          "title": "Recipe Slug",
-          "name": "slug",
-          "type": "slug",
-          "default": "{{slug}}"
-        },
-        {
           "title": "Published date",
           "name": "date",
           "type": "datetime",

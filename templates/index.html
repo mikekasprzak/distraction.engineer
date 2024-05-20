@@ -4,17 +4,17 @@
 
 {% block header %}
 <header class="hero">
-    <h1 class="logo">The Distraction<wbr>.Engineer</h1>
+    <h1 class="logo">The<wbr>.Distraction<wbr>.Engineer</h1>
 </header>
 {% endblock %}
 
 
 {% block content %}
-<p></p>
+<p>{{config.description}}</p>
 
 {% set words = get_section(path="words/_index.md") %}
 {% if words %}
-<h2>Words</h2>
+<h2>Recent words</h2>
 <p>Notes, articles, logs, and blogs</p>
 <ul>
     {% for page in words.pages %}
@@ -23,12 +23,13 @@
         <li>No words</li>
     {% endfor %}
 </ul>
+<p><a href="/words">More words</a></p>
 {% endif %}
 
 
 {% set works = get_section(path="works/_index.md") %}
 {% if works %}
-<h2>Works</h2>
+<h2>Recent works</h2>
 <p>Showing off</p>
 <ul>
     {% for page in works.pages %}
@@ -37,13 +38,14 @@
         <li>No works</li>
     {% endfor %}
 </ul>
+<p><a href="/works">More works</a></p>
 {% endif %}
 
 
 {% set recipes = get_section(path="recipes/_index.md") %}
 {% if recipes %}
 <h2>Recipes</h2>
-<p>Everyday chemistry in your face</p>
+<p>Everyday chemistry</p>
 <ul>
     {% for page in recipes.pages %}
         <li><a href="{{page.permalink | safe}}">{{page.title}}</a></li>
@@ -51,18 +53,20 @@
         <li>No recipes</li>
     {% endfor %}
 </ul>
+<p><a href="/recipes">More recipes</a></p>
 {% endif %}
 
-<h2>Off site</h2>
-<p>
-    <a href="https://twitter.com/mikekasprzak" rel="me">Twitter</a>, 
-    <a href="https://youtube.com/mikekasprzak" rel="me">YouTube</a>, 
-    <a href="https://github.com/mikekasprzak" rel="me">GitHub</a>, 
-    <a href="https://ldjam.com/users/pov" rel="me">Ludum Dare</a>,
-    <a href="https://jammer.bio/pov" rel="me">Jammer.bio</a>,
-    <a href="https://gamedev.bio/mikekasprzak" rel="me">gamedev.bio</a>,
-    <a href="https://toonormal.com">Old Blog</a>
-</p>
+<h2>Elsewhere</h2>
+<p>Can't get enough</p>
+<ul>
+    <li><a href="https://twitter.com/mikekasprzak" rel="me">Twitter</a></li>
+    <li><a href="https://youtube.com/mikekasprzak" rel="me">YouTube</a></li>
+    <li><a href="https://github.com/mikekasprzak" rel="me">GitHub</a></li>
+    <li><a href="https://ldjam.com/users/pov" rel="me">Ludum Dare</a></li>
+    <li><a href="https://jammer.bio/pov" rel="me">Jammer.bio</a></li>
+    <li><a href="https://gamedev.bio/mikekasprzak" rel="me">gamedev.bio</a></li>
+    <li><a href="https://toonormal.com">Old Blog</a></li>
+</ul>
 
 {{indieweb::hcard()}}
 {#<pre>{{__tera_context | escape | safe}}</pre>#}

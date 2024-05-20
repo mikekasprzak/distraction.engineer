@@ -1,7 +1,9 @@
 +++
 title = "Gluten-free pita bread"
-slug = "gluten-free-pita-bread"
 date = "2024-04-30T22:02:01.554Z"
+
+[taxonomies]
+tags = [ "bread", "gluten-free" ]
 +++
 This recipe is based on this: <https://glutenfreeonashoestring.com/how-to-make-quickbread-pita-bread-step-x-step/>
 

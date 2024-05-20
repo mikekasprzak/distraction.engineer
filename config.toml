@@ -1,6 +1,6 @@
 base_url = "https://distraction.engineer"
-title = "The Distraction.Engineer"
-description = "The words and works of Mike Kasprzak"
+title = "The.Distraction.Engineer"
+description = "Words and works from Mike Kasprzak"
 
 compile_sass = true
 build_search_index = true
@@ -16,4 +16,6 @@ highlight_code = true
 
 [extra]
 author = "Mike Kasprzak"
+email = "the@distraction.engineer"
+about = "Mike Kasprzak is the Distraction Engineer, a professional software and game developer since the late 90's. Mike is best known as the co-creator and caretaker of the popular Ludum Dare online game jam event."
 avatar = "/me/Chicken128B-B.png"
