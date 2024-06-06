@@ -1,5 +1,5 @@
-base_url = "https://distraction.engineer"
-title = "The.Distraction.Engineer"
+base_url = "https://distraction.engineering"
+title = "Distraction.Engineering"
 description = "Words and works from Mike Kasprzak"
 
 compile_sass = true
